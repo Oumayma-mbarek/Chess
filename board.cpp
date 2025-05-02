@@ -168,14 +168,6 @@ void Board::display () const {
 
 
 
-//--------------------------------------------------------------
-//--------------------------------------------------------------
-
-vector<Piece *> Board::get_pieces(Couleur c) const {
-
-        return pieces[c];
-    
-}
 
 //--------------------------------------------------------------
 //--------------------------------------------------------------
@@ -266,14 +258,23 @@ bool Board::deplace(Spot orig, Spot dest,Couleur turn){
     //only concerns Rook, Queen and Bishop 
     else{
         if (p_dest->get_symbole()=="Rook"){
-            if(isRookMoveBlocked) return false;
+            if(isRookMoveBlocked(orig,dest)) {
+                cout << "The path is not clear" << endl;
+                return false;
+            }
         }
 
         if(p_dest->get_symbole()=="Bishop"){
-            if(isBishopMoveBlocked) return false;
+            if(isBishopMoveBlocked(orig,dest)){
+                cout << "The path is not clear" << endl;
+                return false;
+            }
         }
         if(p_dest->get_symbole()=="Queen"){
-            if(isQueenMoveBlocked) return false;
+            if(isQueenMoveBlocked(orig,dest)){
+                cout << "The path is not clear" << endl;
+                return false;
+            } 
         }
 
 

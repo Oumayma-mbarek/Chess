@@ -38,7 +38,6 @@ public:
     size_t strat_alea(Couleur c);
     size_t strat_defense(Couleur c);
 
-    vector<Piece*> get_pieces(Couleur c) const; //renvoie toutes les pieces de couleur c 
     bool is_empty(Spot s); //renvoie true si la case est vide 
 
     Piece* get_piece(int x,int y); //renvoie la piece a la position (x,y)
