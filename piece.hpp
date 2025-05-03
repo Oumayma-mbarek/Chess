@@ -12,9 +12,9 @@
 
 class Piece{
     protected: 
+        Couleur couleur; //couleur
         string symbole; // symbole de la piece en emoji (utf-8)
         int id; //identifiant unique
-        Couleur couleur; //couleur
         Spot pos; //position actuelle 
         bool firstmove; /**< Indicates whether the piece has moved yet (only useful for the king, the rooks, and the pawns). */
 

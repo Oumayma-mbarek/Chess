@@ -7,7 +7,7 @@
 
 using namespace std;
 
-Spot::Spot( int x,int y): x(x), y(y) {}
+Spot::Spot( int col,int row): x(col), y(row) {}
 Spot::~Spot() {}
 
 

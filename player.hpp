@@ -23,9 +23,6 @@ class Player{
         Couleur get_couleur() const ;
         string get_nom() const; 
         ~Player();
-        void insert(string s);
-
-
 };
 
 #endif // PLAYER_HPP

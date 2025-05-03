@@ -10,7 +10,7 @@
 
 using namespace std;
 
-Piece::Piece(Couleur c, string sym, int i ,Spot s,bool fm):symbole(sym), couleur(c),pos(s), id(i),firstmove(fm) {}
+Piece::Piece(Couleur c, string sym, int i ,Spot s,bool fm): couleur(c),symbole(sym),id(i),pos(s), firstmove(fm) {}
 
 void Piece::set_pos(Spot s){
     pos.set_col(s.get_col());

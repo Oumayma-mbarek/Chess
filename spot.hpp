@@ -14,7 +14,7 @@ class Spot{
         int x; //colonne
         int y; //ligne 
     public: 
-        Spot( int x, int y); //constructeur 
+        Spot( int col, int row); //constructeur 
         ~Spot(); //destructeur
         int get_col() const ; //gtter qui renvoie la colonne 
         int get_row() const ; //getter qui renvoie la ligne 

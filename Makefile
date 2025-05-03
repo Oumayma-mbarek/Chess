@@ -1,7 +1,8 @@
 TARGET=chess
 
 CXX=g++
-CXXFLAGS=-Wall -g -fanalyzer -Wextra -Werror -std=c++11
+CXXFLAGS=-Wall -g -fanalyzer -Wextra -Werror -std=c++11 -Wshadow -O2 -Wno-analyzer-use-of-uninitialized-value
+
 
 
 SRC=$(wildcard *.cpp)
