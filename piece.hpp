@@ -6,7 +6,6 @@
 #include <string>
 
 #include "couleur.hpp"
-#include "board.hpp"
 #include "spot.hpp"
 
 
@@ -36,10 +35,6 @@ class Piece{
 };
 
 class King : public Piece {
-    // j'ai pas compris l'attribut identifiant et a quoi il sert ? 
-    //le symbole (le nom en utf-8 pour afficher l'emoji) on l'utilise ou ??
-    //pourquoi on n'utilise juste pas les lettres R,K,N...??
-    // 
     public: 
         King(Couleur c,string sym,int i, Spot s);
         bool possible_move(Spot orig, Spot dest)  override; 
@@ -71,4 +66,4 @@ class Rook : public Piece {
 };
 
 
-#endif 
+#endif // PIECE_HPP

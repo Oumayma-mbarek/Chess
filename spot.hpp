@@ -27,4 +27,4 @@ class Spot{
 
 };
 
-#endif 
+#endif // SPOT_HPP

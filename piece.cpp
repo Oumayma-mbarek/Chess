@@ -10,7 +10,7 @@
 
 using namespace std;
 
-Piece::Piece(Couleur c, string sym, int i ,Spot s,bool fm=true):symbole(sym), couleur(c),pos(s), id(i),firstmove(fm) {}
+Piece::Piece(Couleur c, string sym, int i ,Spot s,bool fm):symbole(sym), couleur(c),pos(s), id(i),firstmove(fm) {}
 
 void Piece::set_pos(Spot s){
     pos.set_col(s.get_col());
@@ -37,7 +37,7 @@ bool Piece::get_firstmove()const {return firstmove;}
 
 
 
-King::King(Couleur c,string sym="king",int i,Spot s):Piece(c,sym,i,s){}
+King::King(Couleur c,string sym,int i,Spot s):Piece(c,sym,i,s){}
 bool King::possible_move(Spot orig, Spot dest ) {
 
     if(!dest.validspot()) return false;
@@ -50,7 +50,7 @@ bool King::possible_move(Spot orig, Spot dest ) {
     return false;
 } 
 
-Queen::Queen(Couleur c,string sym="Queen",int i,Spot s):Piece(c,sym,i,s){}
+Queen::Queen(Couleur c,string sym,int i,Spot s):Piece(c,sym,i,s){}
 bool Queen::possible_move(Spot orig, Spot dest ){
 
     if(!dest.validspot()) return false;
@@ -71,7 +71,7 @@ bool Queen::possible_move(Spot orig, Spot dest ){
     return false;
 } 
 
-Pawn::Pawn(Couleur c,string sym="Pawn",int i,Spot s):Piece(c,sym,i,s){}
+Pawn::Pawn(Couleur c,string sym,int i,Spot s):Piece(c,sym,i,s){}
 bool Pawn::possible_move(Spot orig, Spot dest ){
 
     if(!dest.validspot()) return false;
@@ -125,7 +125,7 @@ bool Pawn::possible_move(Spot orig, Spot dest ){
     return false;
 } 
 
-Knight::Knight(Couleur c,string sym="Knight",int i,Spot s):Piece(c,sym,i,s){}
+Knight::Knight(Couleur c,string sym,int i,Spot s):Piece(c,sym,i,s){}
 bool Knight::possible_move(Spot orig, Spot dest ){
     if(!dest.validspot()) return false;
     if(dest==orig) return false;
@@ -167,7 +167,7 @@ bool Knight::possible_move(Spot orig, Spot dest ){
 
 } 
 
-Bishop::Bishop(Couleur c,string sym="Bishop",int i,Spot s):Piece(c,sym,i,s){}
+Bishop::Bishop(Couleur c,string sym,int i,Spot s):Piece(c,sym,i,s){}
 bool Bishop::possible_move(Spot orig, Spot dest ){
     if(!dest.validspot()) return false;
     if(dest==orig) return false;
@@ -179,7 +179,7 @@ bool Bishop::possible_move(Spot orig, Spot dest ){
     return false;
 } 
 
-Rook::Rook(Couleur c,string sym="Rook",int i,Spot s):Piece(c,sym,i,s){}
+Rook::Rook(Couleur c,string sym,int i,Spot s):Piece(c,sym,i,s){}
 bool Rook::possible_move(Spot orig, Spot dest ){
     if(!dest.validspot()) return false;
     if(dest==orig) return false;
