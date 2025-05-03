@@ -25,7 +25,6 @@ public:
     Board(); 
 
 
-    void alloc_mem_echiquier(); // alloue de la memoire ; une matrice contenant type Piece* mais initialise avec des nullptr 
     string pgn_piece_name(string const name, bool view_pawn, bool view_color) const ; // transforme notation utf-8 en lettre (R/K/Q/N)
     string canonical_position() const; //renvoie position finale du jeu sous forme canonique
     string to_string(int x); //transforme un entier en char : 1->'1' 
@@ -34,9 +33,6 @@ public:
                                           //ni de la disponibilite de la position demande 
     bool deplace(Spot orig, Spot dest, Couleur turn); // déplace une pièce d’une case à une autre.
 
-    // Stratégies
-    size_t strat_alea(Couleur c);
-    size_t strat_defense(Couleur c);
 
     bool is_empty(Spot s); //renvoie true si la case est vide 
 

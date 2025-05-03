@@ -16,18 +16,8 @@ using namespace std;
 //--------------------------------------------------------------
 
 
-void alloc_mem_echiquier(){
-    Piece *** board;
-    for (int col =0; col<8;col++){
-        for(int row=0;row<8;row++){
-            board[row][col]= nullptr; 
-        }
-    }
-    return ;
-} 
 
-//--------------------------------------------------------------
-//--------------------------------------------------------------
+
 
 
 string Board::canonical_position() const {
@@ -91,34 +81,42 @@ string Board::pgn_piece_name(string const name, bool view_pawn, bool view_color)
 // constructeur
 Board::Board () 
 {
-   alloc_mem_echiquier();
+   //alloc_mem_echiquier();
    // allocation des pieces                  
    // Constructeur (Couleur, nom_affiché, id, case)
    //pieces[White] et pieces[Black] sont deux vectuers (piece[2]) 
+    for (int col =0; col<8;col++){
+        for(int row=0;row<8;row++){
+            board[col][row]= nullptr; 
+        }
+    }
+
+
+
    pieces[White] = { 
         new Rook    (White,"\u2656",  0, Spot(0,0)),
-        new Knight(White,"\u2658",  1, Spot(0,1)),
-        new Bishop     (White,"\u2657",  2, Spot(0,2)),
-        new Queen    (White,"\u2655",  3, Spot(0,3)),
-        new King     (White,"\u2654",  4, Spot(0,4)),
-        new Bishop     (White,"\u2657",  5, Spot(0,5)),
-        new Knight(White,"\u2658",  6, Spot(0,6)),
-        new Rook    (White,"\u2656",  7, Spot(0,7)) 
+        new Knight(White,"\u2658",  1, Spot(1,0)),
+        new Bishop     (White,"\u2657",  2, Spot(2,0)),
+        new Queen    (White,"\u2655",  3, Spot(3,0)),
+        new King     (White,"\u2654",  4, Spot(4,0)),
+        new Bishop     (White,"\u2657",  5, Spot(5,0)),
+        new Knight(White,"\u2658",  6, Spot(6,0)),
+        new Rook    (White,"\u2656",  7, Spot(7,0)) 
    };     
    pieces[Black] = {
-        new Rook    (Black, "\u265C",  8, Spot(7,0)),
-        new Knight(Black, "\u265E",  9, Spot(7,1)),
-        new Bishop     (Black, "\u265D", 10, Spot(7,2)),
-        new Queen    (Black, "\u265B", 11, Spot(7,3)),
-        new King     (Black, "\u265A", 12, Spot(7,4)),
-        new Bishop     (Black, "\u265D", 13, Spot(7,5)),
-        new Knight(Black, "\u265E", 14, Spot(7,6)),
+        new Rook    (Black, "\u265C",  8, Spot(0,7)),
+        new Knight(Black, "\u265E",  9, Spot(1,7)),
+        new Bishop     (Black, "\u265D", 10, Spot(2,7)),
+        new Queen    (Black, "\u265B", 11, Spot(3,7)),
+        new King     (Black, "\u265A", 12, Spot(4,7)),
+        new Bishop     (Black, "\u265D", 13, Spot(5,7)),
+        new Knight(Black, "\u265E", 14, Spot(6,7)),
         new Rook    (Black, "\u265C", 15, Spot(7,7))
    };
    // alloc pawns
    for (size_t i=0;i<8;i++) {
-       pieces[White].push_back(new Pawn(White, "\u2659" + string(1,i), 16+i, Spot(1,i)));
-       pieces[Black].push_back(new Pawn(Black,   "\u265F" + string(1,i), 24+i, Spot(6,i)));
+       pieces[White].push_back(new Pawn(White, "\u2659" + string(i,1), 16+i, Spot(i,1)));
+       pieces[Black].push_back(new Pawn(Black,   "\u265F" + string(i,1), 24+i, Spot(i,6)));
    }
    // Pose des pieces en position initiale sur l'echiquier
    for (auto p : pieces[White])
@@ -182,8 +180,8 @@ bool Board::is_empty(Spot s){
 //--------------------------------------------------------------
 //--------------------------------------------------------------
 
-Piece* Board::get_piece(int x,int y){
-    return board[x][y];
+Piece* Board::get_piece(int col,int row){
+    return board[col][row];
 }
 
 //--------------------------------------------------------------
