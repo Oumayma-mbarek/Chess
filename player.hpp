@@ -20,7 +20,7 @@ class Player{
     public: 
 
         Player (string n, Couleur c);
-        Couleur get_couleur () const ;
+        Couleur get_couleur() const ;
         string get_nom() const; 
         ~Player();
         void insert(string s);

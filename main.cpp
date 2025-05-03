@@ -3,12 +3,8 @@
 #include <string>
 #include <vector>
 
-#include "board.hpp"
-#include "spot.hpp"
+
 #include "game.hpp"
-#include "player.hpp"
-
-
 
 using namespace std;
 

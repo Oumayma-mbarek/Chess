@@ -6,8 +6,9 @@
 #include <vector>
 #include <string>
 
-#include "player.hpp"
 #include "board.hpp"
+#include "player.hpp"
+
 
 using namespace std;
 

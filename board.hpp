@@ -7,8 +7,9 @@
 #include <string>
 
 #include "piece.hpp"
-#include "couleur.hpp"
 #include "spot.hpp"
+#include "couleur.hpp"
+
 
 using namespace std ;
 

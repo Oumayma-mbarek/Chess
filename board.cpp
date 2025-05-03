@@ -5,9 +5,9 @@
 #include <string>
 
 #include "board.hpp"
-#include "couleur.hpp"
-#include "spot.hpp"
 #include "piece.hpp"
+#include "spot.hpp"
+#include "couleur.hpp"
 
 using namespace std;
 

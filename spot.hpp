@@ -6,7 +6,6 @@
 #include <string>
 
 #include "couleur.hpp"
-#include "piece.hpp"
 
 using namespace std;
 

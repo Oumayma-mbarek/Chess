@@ -5,9 +5,9 @@
 #include <string>
 
 #include "game.hpp"
-#include "player.hpp"
-#include "couleur.hpp"
 #include "board.hpp"
+#include "couleur.hpp"
+
 
 using namespace std;
 

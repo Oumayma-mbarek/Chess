@@ -2,10 +2,8 @@
 #include <vector>
 #include <string>
 
-#include "couleur.hpp"
-#include "piece.hpp"
 #include "spot.hpp"
-#include "board.hpp"
+#include "couleur.hpp"
 
 using namespace std;
 
