@@ -24,12 +24,12 @@ class Piece{
 
         void set_pos(Spot s); // permet de placer la piece a la position s 
         
-        Spot get_pos() const ; //renvoie la position d'une piece 
+        Spot get_pos(); //renvoie la position d'une piece 
         string get_symbole()const;
         Couleur get_color() const;
         bool get_firstmove() const;
 
-        virtual bool possible_move(Spot orig, Spot dest)  ;// true si le deplacement est valide 
+        virtual bool possible_move(Spot orig, Spot dest)=0  ;// true si le deplacement est valide 
 
         void display();
 };

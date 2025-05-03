@@ -17,7 +17,7 @@ void Piece::set_pos(Spot s){
     pos.set_row(s.get_row());
 }
         
-Spot Piece::get_pos() const {
+Spot Piece::get_pos(){
     return Spot(pos.get_col(),pos.get_row());
 }
        

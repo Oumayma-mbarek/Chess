@@ -18,7 +18,7 @@ using namespace std ;
 
 class Board {
 private:
-    Piece *** board; //tableau de 8x8 pointeurs vers pieces
+    Piece * board[8][8]; //tableau de 8x8 pointeurs vers pieces
     vector<Piece*> pieces[2]; //0=white 1=Black
 
 public:
