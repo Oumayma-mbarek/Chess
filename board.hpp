@@ -26,8 +26,6 @@ public:
     Board(); 
 
 
-    string pgn_piece_name(string const name, bool view_pawn, bool view_color) const ; // transforme notation utf-8 en lettre (R/K/Q/N)
-    string canonical_position() const; //renvoie position finale du jeu sous forme canonique
     string to_string(int x); //transforme un entier en char : 1->'1' 
 
     void pose_piece(Piece* p, Spot pos);  // place une pièce dans board[x][y]. //ne fait pas la verification du deplacement
@@ -40,7 +38,7 @@ public:
     Piece* get_piece(int x,int y); //renvoie la piece a la position (x,y)
 
     char askwhichpiecewanted();
-    bool incheck(Couleur turn);
+    //bool incheck(Couleur turn);
 
     bool isBishopMoveBlocked(Spot orig, Spot dest);
     bool isRookMoveBlocked(Spot orig, Spot dest);

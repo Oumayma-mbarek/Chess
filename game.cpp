@@ -49,9 +49,9 @@ void Game::play(){
     while (true) {
         // Display the board
         board.display();
-        if(board.incheck(white_turn ? Couleur::White : Couleur::Black)){
-            cout << "Check" << endl;
-        }
+        //if(board.incheck(white_turn ? Couleur::White : Couleur::Black)){
+        //    cout << "Check" << endl;
+        //}
         // Display the current player
         cout << "Player " << (white_turn ? "White" : "Black") << ", enter your move: ";
         cin >> input;

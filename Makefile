@@ -1,11 +1,11 @@
-TARGET= chess
+TARGET=chess
 
-CXX = g++
-CXXFLAGS= -Wall -g -b -fanalyzer -Wextra -Werror -std=c++11
+CXX=g++
+CXXFLAGS=-Wall -g -fanalyzer -Wextra -Werror -std=c++11
 
 
-SRC = $(wildcard *.cpp)
-OBJ=$(SRC:.cpp =.o)
+SRC=$(wildcard *.cpp)
+OBJ=$(subst .cpp,.o,$(SRC))
 
 all: $(TARGET)
 
@@ -13,8 +13,8 @@ $(TARGET): $(OBJ)
 	$(CXX) $(LDFLAGS) -o $@ $^
 
 
-%.o: %.cpp %.hpp
-	$(CXX) $(CXXFLAGS) -c -o $@ $^
+%.o: %.cpp 
+	$(CXX) $(CXXFLAGS) -c -o $@ $<
 
 
 clean:
