@@ -54,7 +54,8 @@ void Game::play(){
         //}
         // Display the current player
         cout << "Player " << (white_turn ? "White" : "Black") << ", enter your move: ";
-        cin >> input;
+        cin >> input ;
+        cout << endl;
 
         // Check for special commands
         if (input == "/quit") {
@@ -77,7 +78,17 @@ void Game::play(){
             cout << "Invalid input. Please enter a valid move." << endl;
             continue;
         }
-
+         // Execute the move
+        bool moved = false;
+        if (is_valid_input(input)) {
+             Spot origin(input[0] - 'a', input[1] - '1');
+             Spot dest(input[2] - 'a', input[3] - '1');
+             moved = board.deplace(origin, dest, (white_turn ? Couleur::White : Couleur::Black));
+        }
+        if(!moved){
+            cout << "Invalid move" << endl;
+            continue;
+        }
         // Switch to the next player
         white_turn = !white_turn;
 

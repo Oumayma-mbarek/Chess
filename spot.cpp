@@ -7,7 +7,7 @@
 
 using namespace std;
 
-Spot::Spot( int col,int row): x(col), y(row) {}
+Spot::Spot( int row,int col): x(row), y(col) {}
 Spot::~Spot() {}
 
 
@@ -18,23 +18,21 @@ bool Spot::operator==(const Spot& other) const{
  }
 
   
-int Spot::get_col() const {return x;}
-int Spot::get_row() const {return y;}
+int Spot::get_col() const {return y;}
+int Spot::get_row() const {return x;}
 
 void Spot::set_col(int col){
-    x=col; 
+    y=col; 
     return ;
 }
 void Spot::set_row(int row){
-    y=row;
+    x=row;
     return;
 }
 
 
 string Spot::to_string()  {
-    char colonne = 'a' + x;         // x = 0 → 'a'
-    int ligne = y + 1;              // y = 0 → 1
-    return string(1, colonne) + std::to_string(ligne);
+    return string(1, x + 'a') + string(1, y + '1');
 }
 
 

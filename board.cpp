@@ -22,9 +22,9 @@ Board::Board ()
    // allocation des pieces                  
    // Constructeur (Couleur, nom_affiché, id, case)
    //pieces[White] et pieces[Black] sont deux vectuers (piece[2]) 
-    for (int col =0; col<8;col++){
-        for(int row=0;row<8;row++){
-            board[col][row]= nullptr; 
+    for (int row =0; row<8;row++){
+        for(int col=0;col<8;col++){
+            board[row][col]= nullptr; 
         }
     }
 
@@ -51,15 +51,18 @@ Board::Board ()
         new Rook    (Black, "\u265C", 15, Spot(7,7))
    };
    // alloc pawns
-   for (size_t i=0;i<8;i++) {
-       pieces[White].push_back(new Pawn(White, "\u2659" + string(i,1), 16+i, Spot(i,1)));
-       pieces[Black].push_back(new Pawn(Black,   "\u265F" + string(i,1), 24+i, Spot(i,6)));
-   }
-   // Pose des pieces en position initiale sur l'echiquier
-   for (auto p : pieces[White])
-       pose_piece(p, p->get_pos());
-   for (auto p : pieces[Black])
-       pose_piece(p, p->get_pos());
+   for (int i=0;i<8;i++) {
+    pieces[White].push_back(new Pawn(White, "\u2659", 16+i, Spot(1,i)));
+    pieces[Black].push_back(new Pawn(Black,   "\u265F", 24+i, Spot(6,i)));
+    }
+    // Place the pieces on the board
+    for(int i = 0; i < 8; i++){
+        board[0][i] = pieces[0][i];
+        board[1][i] = pieces[0][i + 8];
+        board[6][i] = pieces[1][i + 8];
+        board[7][i] = pieces[1][i];
+    }
+
 }
 
 
@@ -90,7 +93,7 @@ void Board::display () const {
                     cout << "|" ;
                     if (board[i][j]) { 
                       cout << "\u0020\u0020";  //U+0020 est un esapce utf-8 taille police
-                      board[i][j]-> display();
+                      board[i][j]->display();
                       cout << "\u0020" << " ";
                     }
                     else 
@@ -108,7 +111,7 @@ void Board::display () const {
 //--------------------------------------------------------------
 
 bool Board::is_empty(Spot s){
-    if (board[s.get_col()][s.get_row()]== nullptr){
+    if (board[s.get_row()][s.get_col()]== nullptr){
         return true;
     }
     return false;
@@ -117,8 +120,8 @@ bool Board::is_empty(Spot s){
 //--------------------------------------------------------------
 //--------------------------------------------------------------
 
-Piece* Board::get_piece(int col,int row){
-    return board[col][row];
+Piece* Board::get_piece(int row,int col){
+    return board[row][col];
 }
 
 //--------------------------------------------------------------
@@ -220,6 +223,7 @@ bool Board::deplace(Spot orig, Spot dest,Couleur turn){
             //gerer le fait de manger la piece 
             p_dest = nullptr;
         }
+        return true;
     }
     return true;
     

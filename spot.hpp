@@ -11,10 +11,10 @@ using namespace std;
 
 class Spot{
     private: 
-        int x; //colonne
-        int y; //ligne 
+        int x; //row
+        int y; //col 
     public: 
-        Spot( int col, int row); //constructeur 
+        Spot( int row, int col); //constructeur 
         ~Spot(); //destructeur
         int get_col() const ; //gtter qui renvoie la colonne 
         int get_row() const ; //getter qui renvoie la ligne 

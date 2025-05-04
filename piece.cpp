@@ -24,6 +24,7 @@ Spot Piece::get_pos(){
 
 void Piece::display(){
     cout<< symbole;
+    return;
 }
 
 string Piece::get_symbole()const{return symbole;}
