@@ -159,8 +159,8 @@ bool Board::deplace(Spot orig, Spot dest,Couleur turn){
         return false;
     }
 
-    Piece* p_orig= get_piece(orig.get_col(), orig.get_row());
-    Piece* p_dest=get_piece(dest.get_col(), dest.get_row());
+    Piece* p_orig= get_piece(orig.get_row(), orig.get_col());
+    Piece* p_dest=get_piece(dest.get_row(), dest.get_col());
 
     //make sure start square has a piece inside it
     if (p_orig==nullptr){
@@ -181,50 +181,60 @@ bool Board::deplace(Spot orig, Spot dest,Couleur turn){
         return false;
     }
     //make sure that the move is possible 
-    if(! (*p_orig).possible_move(orig,dest)){
+    if(! p_orig->possible_move(orig,dest)){
         cout << "Invalid move" << endl;
         return false;
     }
 
     //make sure that dest is either empty or has a piece of another color
-    if( p_dest != nullptr && (*p_orig).get_color() == (*p_dest).get_color()){
+    if( p_dest != nullptr && p_orig->get_color() == p_dest->get_color() ){
         cout << "destination square has a piece of your own" << endl;
+        return false;
+    }
+
+
+    //make sure that pawn is not capturing a piece in front of it 
+    if((p_orig->get_symbole()== "\u2659" || p_orig->get_symbole()=="\u265F" )    && abs(orig.get_row() - dest.get_row()) >= 1 && orig.get_col() == dest.get_col() && p_dest != nullptr){
+        cout << "Pawns can't capture a piece in front of them" << endl;
         return false;
     }
 
     //check the path is clear 
     //only concerns Rook, Queen and Bishop 
-    else{
-        if (p_dest->get_symbole()=="Rook"){
-            if(isRookMoveBlocked(orig,dest)) {
-                cout << "The path is not clear" << endl;
-                return false;
-            }
+    
+    if (p_dest->get_symbole()=="\u265C" || p_dest->get_symbole()=="\u2656"){
+        if(isRookMoveBlocked(orig,dest)) {
+            cout << "The path is not clear" << endl;
+            return false;
         }
-
-        if(p_dest->get_symbole()=="Bishop"){
-            if(isBishopMoveBlocked(orig,dest)){
-                cout << "The path is not clear" << endl;
-                return false;
-            }
-        }
-        if(p_dest->get_symbole()=="Queen"){
-            if(isQueenMoveBlocked(orig,dest)){
-                cout << "The path is not clear" << endl;
-                return false;
-            } 
-        }
-
-
-
-        //place p_orig at dest
-        (*p_orig).set_pos(dest);
-        if( p_dest != nullptr){
-            //gerer le fait de manger la piece 
-            p_dest = nullptr;
-        }
-        return true;
     }
+
+    if(p_dest->get_symbole()=="\u2657" || p_dest->get_symbole()=="\u265D"){
+        if(isBishopMoveBlocked(orig,dest)){
+            cout << "The path is not clear" << endl;
+            return false;
+        }
+    }
+    if(p_dest->get_symbole()=="\u2655" || p_dest->get_symbole()=="\u265B"){
+        if(isQueenMoveBlocked(orig,dest)){
+            cout << "The path is not clear" << endl;
+            return false;
+        } 
+    }
+
+    //if the moved piece is a pawn, a rook, or the king, set firstmove to false
+    if ((p_orig->get_symbole() == "\u2659" || p_orig->get_symbole() == "\u265F" || p_orig->get_symbole() == "\u265C" || p_orig->get_symbole() == "\u2656" || p_orig->get_symbole() == "\u265A" ||  p_orig->get_symbole() == "\u2654")){
+        p_orig->setFirstMove(false);
+    }
+
+    //place p_orig at dest  
+    if( p_dest != nullptr){
+        //gerer le fait de manger la piece 
+        p_dest = nullptr;
+    }
+    p_orig->set_pos(dest);
+
+    
     return true;
     
 }

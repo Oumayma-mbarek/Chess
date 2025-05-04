@@ -33,6 +33,11 @@ Couleur Piece::get_color()const{return couleur;}
 
 bool Piece::get_firstmove()const {return firstmove;}
 
+void Piece::setFirstMove(bool t){ 
+    firstmove=t;
+    return;
+}
+
 
 
 

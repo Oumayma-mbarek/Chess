@@ -28,6 +28,7 @@ class Piece{
         string get_symbole()const;
         Couleur get_color() const;
         bool get_firstmove() const;
+        void setFirstMove(bool t) ;
 
         virtual bool possible_move(Spot orig, Spot dest)=0  ;// true si le deplacement est valide 
 
