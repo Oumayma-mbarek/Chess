@@ -22,7 +22,7 @@ class Piece{
     public: 
         Piece(Couleur C,string sym, int i ,Spot s,bool firstmove=true); //constructeur 
 
-        void set_pos(Spot s); // permet de placer la piece a la position s 
+        void set_pos(Spot s); //permet de changer la position d'une piece( aucune influence sur le board) 
         
         Spot get_pos(); //renvoie la position d'une piece 
         string get_symbole()const;

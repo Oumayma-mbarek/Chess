@@ -112,8 +112,10 @@ void Board::display () const {
 
 bool Board::is_empty(Spot s){
     if (board[s.get_row()][s.get_col()]== nullptr){
+        cout << "the spot "<< s.get_row()<<s.get_col() << " is empty" << endl;
         return true;
     }
+    
     return false;
 }
 
@@ -167,38 +169,40 @@ bool Board::deplace(Spot orig, Spot dest,Couleur turn){
         cout << "no piece in origin square" << endl;
         return false;
     }
-
+    cout << "origin square has a piece inside" << endl;
     //make sure dest is not origin
     if(dest==orig){
         cout << "you must move the piece" << endl;
         return false;
     }
-
+    cout << "dest is different from orig" << endl;
     //make sure that the player is moving his own piece 
 
     if(p_orig->get_color()!= turn){
         cout << "choose a piece of your own" << endl;
         return false;
     }
+    cout << "player is moving his own piece" << endl;
     //make sure that the move is possible 
-    if(! p_orig->possible_move(orig,dest)){
-        cout << "Invalid move" << endl;
+    if(p_orig->possible_move(orig,dest) == false){
+        cout << "Invalid move board deplace possible_move 5ra piece  " << endl;
         return false;
     }
 
+    cout << "the move is possible according to possible_move"<< endl;
     //make sure that dest is either empty or has a piece of another color
     if( p_dest != nullptr && p_orig->get_color() == p_dest->get_color() ){
         cout << "destination square has a piece of your own" << endl;
         return false;
     }
 
-
+    cout << "destination square is empty or has a piece of another color"<< endl;
     //make sure that pawn is not capturing a piece in front of it 
     if((p_orig->get_symbole()== "\u2659" || p_orig->get_symbole()=="\u265F" )    && abs(orig.get_row() - dest.get_row()) >= 1 && orig.get_col() == dest.get_col() && p_dest != nullptr){
         cout << "Pawns can't capture a piece in front of them" << endl;
         return false;
     }
-
+    cout << "Pawn is not capturing a piece in front of it "<< endl;
     //check the path is clear 
     //only concerns Rook, Queen and Bishop 
     
@@ -207,34 +211,45 @@ bool Board::deplace(Spot orig, Spot dest,Couleur turn){
             cout << "The path is not clear" << endl;
             return false;
         }
+        cout << "the path is clear for rook" << endl;
     }
-
+    
     if(p_dest->get_symbole()=="\u2657" || p_dest->get_symbole()=="\u265D"){
         if(isBishopMoveBlocked(orig,dest)){
             cout << "The path is not clear" << endl;
             return false;
         }
+        cout << "the path is clear for bishop" << endl;
     }
     if(p_dest->get_symbole()=="\u2655" || p_dest->get_symbole()=="\u265B"){
         if(isQueenMoveBlocked(orig,dest)){
             cout << "The path is not clear" << endl;
             return false;
         } 
+        cout << "the path is clear for Queen" << endl;
     }
 
-    //if the moved piece is a pawn, a rook, or the king, set firstmove to false
-    if ((p_orig->get_symbole() == "\u2659" || p_orig->get_symbole() == "\u265F" || p_orig->get_symbole() == "\u265C" || p_orig->get_symbole() == "\u2656" || p_orig->get_symbole() == "\u265A" ||  p_orig->get_symbole() == "\u2654")){
-        p_orig->setFirstMove(false);
-    }
+    
 
+    cout << "etape 3" << endl;
     //place p_orig at dest  
     if( p_dest != nullptr){
         //gerer le fait de manger la piece 
         p_dest = nullptr;
     }
     p_orig->set_pos(dest);
+    board[dest.get_row()][dest.get_col()]= p_orig;
+    cout << "etape 4"<< endl;
+    board[orig.get_row()][orig.get_col()]=nullptr;
+    cout << "etape5" << endl;
+    cout << "Piece moved from " << orig.to_string() << " to " << dest.to_string() << endl;
+      
+    //if the moved piece is a pawn, a rook, or the king, set firstmove to false
+    if ((p_orig->get_symbole() == "\u2659" || p_orig->get_symbole() == "\u265F" || p_orig->get_symbole() == "\u265C" || p_orig->get_symbole() == "\u2656" || p_orig->get_symbole() == "\u265A" ||  p_orig->get_symbole() == "\u2654")){
+        p_orig->setFirstMove(false);
+        cout << "first move is set to false" << endl;
+    }
 
-    
     return true;
     
 }

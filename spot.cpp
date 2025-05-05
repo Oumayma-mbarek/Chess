@@ -32,7 +32,7 @@ void Spot::set_row(int row){
 
 
 string Spot::to_string()  {
-    return string(1, x + 'a') + string(1, y + '1');
+    return string(1, y + '1') + string(1, x + 'a') ;
 }
 
 

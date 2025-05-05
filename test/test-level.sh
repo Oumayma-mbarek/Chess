@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # the directory where the games transcripts are 
-DATA=data
+DATA=test/data
 
 
 COMMENT_CHAR="#"
@@ -26,7 +26,7 @@ if [ $# -eq 2 ]; then
 	CHESS_PROG="$2"
 	printf "* Setting ${BLUE}${CHESS_PROG}${NC} passed as a parameter.\n"
 else  # No chess executable passed as parameter
-	CHESS_PROG="../src/echecs"
+	CHESS_PROG="/home/noix/Documents/dossier_unistra/1A/oop/Chess_Game/chess"
 	echo "* Using executable ${CHESS_PROG} defined in script."
 fi
 

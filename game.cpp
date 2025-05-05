@@ -20,6 +20,7 @@ Game::~Game() {}
 
 bool Game::is_valid_input(string const & cmd) {
     regex mouvmtpattern("[a-h][1-8][a-h][1-8]");
+    cout << "valid input" << endl;
     return regex_match(cmd,mouvmtpattern);
 
 }
@@ -48,14 +49,18 @@ void Game::play(){
 
     while (true) {
         // Display the board
-        board.display();
+        
+        cout << "Player " << (white_turn ? "White" : "Black") << ", enter your move: ";
+        cin >> input ;
+        cout << "your move is " << input << endl;;
+        
         //if(board.incheck(white_turn ? Couleur::White : Couleur::Black)){
         //    cout << "Check" << endl;
         //}
         // Display the current player
-        cout << "Player " << (white_turn ? "White" : "Black") << ", enter your move: ";
-        cin >> input ;
-        cout << endl;
+        
+        
+        
 
         // Check for special commands
         if (input == "/quit") {
@@ -82,16 +87,20 @@ void Game::play(){
          // Execute the move
         bool moved = false;
         if (is_valid_input(input)) {
-            Spot origin(input[0] - 'a', input[1] - '1');
-            Spot dest(input[2] - 'a', input[3] - '1');
-            moved = board.deplace(origin, dest, (white_turn ? Couleur::White : Couleur::Black));
+            Spot origin( input[1] - '1',input[0] - 'a');
+            Spot dest(input[3] - '1',input[2] - 'a');
+            moved = board.deplace(origin, dest, (white_turn ? White : Black));
+            if(!moved){
+                cout << "invalid move" << endl;
+                continue;
+            }
         }
-        if(!moved){
-            cout << "Invalid move" << endl;
-            continue;
-        }
+        cout << "current board"<< endl;
+        board.display();
+    
         // Switch to the next player
         white_turn = !white_turn;
+        
     }
     board.canonicallyprintboard(score);
 }

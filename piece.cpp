@@ -60,14 +60,13 @@ Queen::Queen(Couleur c,string sym,int i,Spot s):Piece(c,sym,i,s){}
 bool Queen::possible_move(Spot orig, Spot dest ){
 
     if(!dest.validspot()) return false;
-    if(dest==orig) return false;
 
     //Horizontal move
-    if (orig.get_col() != dest.get_col() && orig.get_row() == dest.get_row()){
+    if (orig.get_row() != dest.get_row() && orig.get_col() == dest.get_col()){
         return true;
     }
     //Verical move
-    if (orig.get_col() == dest.get_col() && orig.get_row() != dest.get_row()){
+    if (orig.get_row() == dest.get_row() && orig.get_col() != dest.get_col()){
         return true;
     }
     // Diagonal move
@@ -80,14 +79,16 @@ bool Queen::possible_move(Spot orig, Spot dest ){
 Pawn::Pawn(Couleur c,string sym,int i,Spot s):Piece(c,sym,i,s){}
 bool Pawn::possible_move(Spot orig, Spot dest ){
 
-    if(!dest.validspot()) return false;
-    if(dest==orig) return false;
+    if(!dest.validspot()) {
+        return false;
+        cout << "invalid spot" << endl;
+    }
     
     //White Pawns
     if(get_color()==White){
         
         //mouvement normal, anvance d'une case
-        if(dest.get_col()== orig.get_col()  &&  dest.get_row()==orig.get_row()+1){
+        if(dest.get_col()== orig.get_col()  &&  dest.get_row()==orig.get_col()+1){
             return true;
         }
         //avance de deux cases si premier move
@@ -102,7 +103,6 @@ bool Pawn::possible_move(Spot orig, Spot dest ){
         else if(dest.get_col()== orig.get_col()-1  &&  dest.get_row()==orig.get_row()+1){
             return true;
         }
-        else return false;
     }
 
 
@@ -125,16 +125,15 @@ bool Pawn::possible_move(Spot orig, Spot dest ){
         else if(dest.get_col()== orig.get_col()+1  &&  dest.get_row()==orig.get_row()-1){
             return true;
         }
-        else return false;
     }
 
     return false;
+    
 } 
 
 Knight::Knight(Couleur c,string sym,int i,Spot s):Piece(c,sym,i,s){}
 bool Knight::possible_move(Spot orig, Spot dest ){
     if(!dest.validspot()) return false;
-    if(dest==orig) return false;
     
 
     // L-shaped move up-right
@@ -176,7 +175,7 @@ bool Knight::possible_move(Spot orig, Spot dest ){
 Bishop::Bishop(Couleur c,string sym,int i,Spot s):Piece(c,sym,i,s){}
 bool Bishop::possible_move(Spot orig, Spot dest ){
     if(!dest.validspot()) return false;
-    if(dest==orig) return false;
+    
 
     // Diagonal move
     if (abs(orig.get_col() - dest.get_col()) == abs(orig.get_row() - dest.get_row())){
@@ -188,7 +187,7 @@ bool Bishop::possible_move(Spot orig, Spot dest ){
 Rook::Rook(Couleur c,string sym,int i,Spot s):Piece(c,sym,i,s){}
 bool Rook::possible_move(Spot orig, Spot dest ){
     if(!dest.validspot()) return false;
-    if(dest==orig) return false;
+    
     //Horizontal move
     if (orig.get_col() != dest.get_col() && orig.get_row() == dest.get_row()){
         return true;
