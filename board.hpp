@@ -30,7 +30,7 @@ public:
 
     void pose_piece(Piece* p, Spot pos);  // place une pièce dans board[x][y]. //ne fait pas la verification du deplacement
                                           //ni de la disponibilite de la position demande 
-    bool deplace(Spot orig, Spot dest, Couleur turn); // déplace une pièce d’une case à une autre.
+    bool deplace(Spot orig, Spot dest, Couleur turn,bool actualmove, bool checktest=false); // déplace une pièce d’une case à une autre.
 
 
     bool is_empty(Spot s); //renvoie true si la case est vide 
@@ -38,7 +38,8 @@ public:
     Piece* get_piece(int x,int y); //renvoie la piece a la position (x,y)
 
     char askwhichpiecewanted();
-    //bool incheck(Couleur turn);
+    bool incheck(Couleur turn);
+    bool willputincheck(Spot orig, Spot dest,Couleur turn);
 
     bool isBishopMoveBlocked(Spot orig, Spot dest);
     bool isRookMoveBlocked(Spot orig, Spot dest);

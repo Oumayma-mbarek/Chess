@@ -48,18 +48,11 @@ void Game::play(){
     string score;
 
     while (true) {
-        // Display the board
-        
+    
         cout << "Player " << (white_turn ? "White" : "Black") << ", enter your move: ";
         cin >> input ;
         cout << "your move is " << input << endl;;
-        
-        //if(board.incheck(white_turn ? Couleur::White : Couleur::Black)){
-        //    cout << "Check" << endl;
-        //}
-        // Display the current player
-        
-        
+         
         
 
         // Check for special commands
@@ -88,8 +81,12 @@ void Game::play(){
         bool moved = false;
         if (is_valid_input(input)) {
             Spot origin( input[1] - '1',input[0] - 'a');
-            Spot dest(input[3] - '1',input[2] - 'a');
-            moved = board.deplace(origin, dest, (white_turn ? White : Black));
+            Spot dest(input[3] - '1',input[2]-'a');
+            moved = board.deplace(origin, dest, (white_turn ? White : Black),true);
+            
+            //check if the king is in check
+            
+
             if(!moved){
                 cout << "invalid move" << endl;
                 continue;

@@ -27,6 +27,7 @@ class Piece{
         Spot get_pos(); //renvoie la position d'une piece 
         string get_symbole()const;
         Couleur get_color() const;
+        int get_id() const;
         bool get_firstmove() const;
         void setFirstMove(bool t) ;
 

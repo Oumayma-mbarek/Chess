@@ -20,7 +20,10 @@ void Piece::set_pos(Spot s){
 Spot Piece::get_pos(){
     return Spot(pos.get_col(),pos.get_row());
 }
-       
+
+int Piece::get_id() const{
+    return id;
+}
 
 void Piece::display(){
     cout<< symbole;
@@ -87,12 +90,13 @@ bool Pawn::possible_move(Spot orig, Spot dest ){
     //White Pawns
     if(get_color()==White){
         
-        //mouvement normal, anvance d'une case
-        if(dest.get_col()== orig.get_col()  &&  dest.get_row()==orig.get_col()+1){
+
+        //avance de deux cases si premier move
+        if(firstmove==true && dest.get_col()== orig.get_col()  &&  dest.get_row()==orig.get_row()+2){
             return true;
         }
-        //avance de deux cases si premier move
-        else if(firstmove==true && dest.get_col()== orig.get_col()  &&  dest.get_row()==orig.get_row()+2){
+        //mouvement normal, anvance d'une case
+        else if(dest.get_col()== orig.get_col()  &&  dest.get_row()==orig.get_row()+1){
             return true;
         }
         //mouvement diagonal vers la droite
@@ -137,35 +141,35 @@ bool Knight::possible_move(Spot orig, Spot dest ){
     
 
     // L-shaped move up-right
-    if (dest.get_col() == orig.get_col() + 1 && dest.get_row() == orig.get_row() + 2){
+    if (dest.get_row() == orig.get_row() + 1 && dest.get_col() == orig.get_col() + 2){
         return true;
     }
     // L-shaped move up-left
-    if (dest.get_col() == orig.get_col() - 1 && dest.get_row() == orig.get_row() + 2){
+    if (dest.get_row() == orig.get_row() - 1 && dest.get_col() == orig.get_col() + 2){
         return true;
     }
     // L-shaped move down-right
-    if (dest.get_col() == orig.get_col() + 1 && dest.get_row() == orig.get_row() - 2){
+    if (dest.get_row() == orig.get_row() + 1 && dest.get_col() == orig.get_col() - 2){
         return true;
     }
     // L-shaped move down-left
-    if (dest.get_col() == orig.get_col() - 1 && dest.get_row() == orig.get_row() - 2){
+    if (dest.get_row() == orig.get_row() - 1 && dest.get_col() == orig.get_col() - 2){
         return true;
     }
     // L-shaped move right-up
-    if (dest.get_col() == orig.get_col() + 2 && dest.get_row() == orig.get_row() + 1){
+    if (dest.get_row() == orig.get_row() + 2 && dest.get_col() == orig.get_col() + 1){
         return true;
     }
     // L-shaped move right-down
-    if (dest.get_col() == orig.get_col() + 2 && dest.get_row() == orig.get_row() - 1){
+    if (dest.get_row() == orig.get_row() + 2 && dest.get_col() == orig.get_col() - 1){
         return true;
     }
     // L-shaped move left-up
-    if (dest.get_col() == orig.get_col() - 2 && dest.get_row() == orig.get_row() + 1){
+    if (dest.get_row() == orig.get_row() - 2 && dest.get_col() == orig.get_col() + 1){
         return true;
     }
     // L-shaped move left-down
-    if (dest.get_col() == orig.get_row() - 2 && dest.get_row() == orig.get_row() - 1){
+    if (dest.get_row() == orig.get_row() - 2 && dest.get_col() == orig.get_col() - 1){
         return true;
     }
     else return false;
