@@ -37,6 +37,8 @@ public:
 
     Piece* get_piece(int x,int y); //renvoie la piece a la position (x,y)
 
+    bool pathisclear(Spot orig, Spot dest);
+
     char askwhichpiecewanted();
     bool incheck(Couleur turn);
     bool willputincheck(Spot orig, Spot dest,Couleur turn);

@@ -9,11 +9,301 @@ the move is possible according to possible_move
 destination square is empty or has a piece of another color
 Pawn is not capturing a piece in front of it 
 the path is clear
-   ref:[[0;32mwR,wN,,wQ,wK,wB,,wR,wP,wP,wP,,,wP,wP,wP,,,,wP,,wN,,,,,,,wP,,,,,,,,bP,,wB,,,,bN,,,bN,,,bP,bP,bP,bP,bB,bP,bP,bP,bR,,bB,bQ,bK,,,bR,[0m]
-   you:[[0;31mthe[0m]
-   ref:[[0;32m?-?[0m]
-   you:[[0;31mpath[0m]
- -> [0;31m[test error] (exit code=139) [0m /home/noix/Documents/dossier_unistra/1A/oop/Chess_Game/chess ended in error for game test/data/1-leg-bish-knight.txt (around move 139)
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 5b to 5d
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |  ♙  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |  ♙  |     |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is e7e5
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is74
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 5g to 5e
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |  ♟  |     |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |     |  ♟  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |  ♙  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |  ♙  |     |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player White, enter your move: your move is g1f3
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 7a to 6c
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |  ♟  |     |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |     |  ♟  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |  ♙  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |  ♘  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |  ♙  |     |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |     |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is b8c6
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is74
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 2h to 3f
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |     |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |  ♟  |     |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |  ♞  |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |     |  ♟  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |  ♙  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |  ♘  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |  ♙  |     |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |     |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player White, enter your move: your move is d2d3
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 4b to 4c
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |     |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |  ♟  |     |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |  ♞  |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |     |  ♟  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |  ♙  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |  ♙  |     |  ♘  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |     |     |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |     |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is g8f6
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is74
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 7h to 6f
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |     |  ♝  |  ♛  |  ♚  |  ♝  |     |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |  ♟  |     |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |  ♞  |     |     |  ♞  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |     |  ♟  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |  ♙  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |  ♙  |     |  ♘  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |     |     |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |     |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player White, enter your move: your move is c1g5
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 3a to 7e
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |     |  ♝  |  ♛  |  ♚  |  ♝  |     |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |  ♟  |     |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |  ♞  |     |     |  ♞  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |     |  ♟  |     |  ♗  |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |  ♙  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |  ♙  |     |  ♘  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |     |     |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |     |  ♕  |  ♔  |  ♗  |     |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is f8e7
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is74
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 6h to 5g
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |     |  ♝  |  ♛  |  ♚  |     |     |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |  ♟  |  ♝  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |  ♞  |     |     |  ♞  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |     |  ♟  |     |  ♗  |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |  ♙  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |  ♙  |     |  ♘  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |     |     |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |     |  ♕  |  ♔  |  ♗  |     |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player White, enter your move: your move is /quit
+Game abandoned by White player. Score: ?-?
+wR,wN,,wQ,wK,wB,,wR,wP,wP,wP,,,wP,wP,wP,,,,wP,,wN,,,,,,,wP,,,,,,,,bP,,wB,,,,bN,,,bN,,,bP,bP,bP,bP,bB,bP,bP,bP,bR,,bB,bQ,bK,,,bR, ?-?
+  -> [0;32mreference position: OK[0m
+  -> [0;32mreference result: OK[0m
+  -> [0m(exit code=0)
 [0;33m> test/data/1-leg-bishop-1.txt[0m
 Player White, enter your move: your move is d2d4
 valid input
@@ -25,11 +315,376 @@ the move is possible according to possible_move
 destination square is empty or has a piece of another color
 Pawn is not capturing a piece in front of it 
 the path is clear
-   ref:[[0;32mwR,wN,,wQ,wK,,wN,wR,wP,wP,wP,,wB,wP,wP,wP,,,,,wP,,,,,,,wP,,,,,,,,bP,,,,,,,,,,bP,,bB,bP,bP,bP,bB,bP,bP,,bP,bR,bN,,bQ,bK,,,bR,[0m]
-   you:[[0;31mthe[0m]
-   ref:[[0;32m?-?[0m]
-   you:[[0;31mpath[0m]
- -> [0;31m[test error] (exit code=139) [0m /home/noix/Documents/dossier_unistra/1A/oop/Chess_Game/chess ended in error for game test/data/1-leg-bishop-1.txt (around move 139)
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 4b to 4d
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |  ♙  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |     |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is d7d5
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is74
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 4g to 4e
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |     |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |  ♟  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |  ♙  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |     |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player White, enter your move: your move is c1g5
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 3a to 7e
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |     |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |  ♟  |     |     |  ♗  |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |  ♙  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |     |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |     |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is g8f6
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is74
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 7h to 6f
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |     |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |     |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |  ♞  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |  ♟  |     |     |  ♗  |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |  ♙  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |     |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |     |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player White, enter your move: your move is g5f6
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 7e to 6f
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |     |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |     |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |  ♗  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |  ♟  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |  ♙  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |     |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |     |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is g7f6
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is74
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 7g to 6f
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |     |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |     |  ♟  |  ♟  |     |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |  ♟  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |  ♟  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |  ♙  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |     |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |     |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player White, enter your move: your move is e2e3
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 5b to 5c
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |     |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |     |  ♟  |  ♟  |     |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |  ♟  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |  ♟  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |  ♙  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |  ♙  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |     |     |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |     |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is f8h6
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is74
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 6h to 8f
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |     |     |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |     |  ♟  |  ♟  |     |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |  ♟  |     |  ♝  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |  ♟  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |  ♙  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |  ♙  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |     |     |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |     |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player White, enter your move: your move is f1e2
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 6a to 5b
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |     |     |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |     |  ♟  |  ♟  |     |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |  ♟  |     |  ♝  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |  ♟  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |  ♙  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |  ♙  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |     |  ♗  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |     |  ♕  |  ♔  |     |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is c8d7
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is74
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 3h to 4g
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |     |  ♛  |  ♚  |     |     |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |  ♝  |  ♟  |  ♟  |     |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |  ♟  |     |  ♝  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |  ♟  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |  ♙  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |  ♙  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |     |  ♗  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |     |  ♕  |  ♔  |     |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player White, enter your move: your move is /quit
+Game abandoned by White player. Score: ?-?
+wR,wN,,wQ,wK,,wN,wR,wP,wP,wP,,wB,wP,wP,wP,,,,,wP,,,,,,,wP,,,,,,,,bP,,,,,,,,,,bP,,bB,bP,bP,bP,bB,bP,bP,,bP,bR,bN,,bQ,bK,,,bR, ?-?
+  -> [0;32mreference position: OK[0m
+  -> [0;32mreference result: OK[0m
+  -> [0m(exit code=0)
 [0;33m> test/data/1-leg-knight-1.txt[0m
 Player White, enter your move: your move is b1c3
 valid input
@@ -41,11 +696,338 @@ the move is possible according to possible_move
 destination square is empty or has a piece of another color
 Pawn is not capturing a piece in front of it 
 the path is clear
-   ref:[[0;32mwR,,wB,wQ,wK,wB,,wR,wP,wP,wP,wP,,wP,wP,wP,,,,,,wN,,,,,,,wP,,,,,,,,,,,,,,bN,,,bP,,,bP,bP,bP,,,bP,bP,bP,bR,,bB,bQ,bK,bB,,bR,[0m]
-   you:[[0;31mthe[0m]
-   ref:[[0;32m?-?[0m]
-   you:[[0;31mpath[0m]
- -> [0;31m[test error] (exit code=139) [0m /home/noix/Documents/dossier_unistra/1A/oop/Chess_Game/chess ended in error for game test/data/1-leg-knight-1.txt (around move 139)
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 2a to 3c
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |  ♘  |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |     |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is d7d5
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is74
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 4g to 4e
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |     |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |  ♟  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |  ♘  |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |     |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player White, enter your move: your move is c3d5
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 3c to 4e
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |     |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |  ♘  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |     |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is g8f6
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is74
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 7h to 6f
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |     |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |     |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |  ♞  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |  ♘  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |     |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player White, enter your move: your move is g1f3
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 7a to 6c
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |     |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |     |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |  ♞  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |  ♘  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |  ♘  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |     |  ♗  |  ♕  |  ♔  |  ♗  |     |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is b8c6
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is74
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 2h to 3f
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |     |  ♝  |  ♛  |  ♚  |  ♝  |     |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |     |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |  ♞  |     |     |  ♞  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |  ♘  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |  ♘  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |     |  ♗  |  ♕  |  ♔  |  ♗  |     |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player White, enter your move: your move is d5f6
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 4e to 6f
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |     |  ♝  |  ♛  |  ♚  |  ♝  |     |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |     |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |  ♞  |     |     |  ♘  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |  ♘  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |     |  ♗  |  ♕  |  ♔  |  ♗  |     |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is e7f6
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is74
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 5g to 6f
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |     |  ♝  |  ♛  |  ♚  |  ♝  |     |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |     |     |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |  ♞  |     |     |  ♟  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |  ♘  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |     |  ♗  |  ♕  |  ♔  |  ♗  |     |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player White, enter your move: your move is e2e4
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 5b to 5d
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |     |  ♝  |  ♛  |  ♚  |  ♝  |     |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |     |     |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |  ♞  |     |     |  ♟  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |  ♙  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |  ♘  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |  ♙  |     |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |     |  ♗  |  ♕  |  ♔  |  ♗  |     |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is /quit
+Game abandoned by Black player. Score: ?-?
+wR,,wB,wQ,wK,wB,,wR,wP,wP,wP,wP,,wP,wP,wP,,,,,,wN,,,,,,,wP,,,,,,,,,,,,,,bN,,,bP,,,bP,bP,bP,,,bP,bP,bP,bR,,bB,bQ,bK,bB,,bR, ?-?
+  -> [0;32mreference position: OK[0m
+  -> [0;32mreference result: OK[0m
+  -> [0m(exit code=0)
 [0;33m> test/data/1-leg-obstacle.txt[0m
 Player White, enter your move: your move is e2e3
 valid input
@@ -57,11 +1039,152 @@ the move is possible according to possible_move
 destination square is empty or has a piece of another color
 Pawn is not capturing a piece in front of it 
 the path is clear
-   ref:[[0;32mwR,wN,wB,wQ,wK,wB,,wR,wP,wP,wP,wP,,wP,wP,wP,,,,,wP,wN,,,,,,,,,,,,,,bP,,,,,,,,,,bN,,,bP,bP,bP,,bP,bP,bP,bP,bR,bN,bB,bQ,bK,bB,,bR,[0m]
-   you:[[0;31mthe[0m]
-   ref:[[0;32m?-?[0m]
-   you:[[0;31mpath[0m]
- -> [0;31m[test error] (exit code=139) [0m /home/noix/Documents/dossier_unistra/1A/oop/Chess_Game/chess ended in error for game test/data/1-leg-obstacle.txt (around move 139)
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 5b to 5c
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |  ♙  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |  ♙  |     |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is d7d5
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is74
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 4g to 4e
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |     |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |  ♟  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |  ♙  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |  ♙  |     |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player White, enter your move: your move is g1f3
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 7a to 6c
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |     |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |  ♟  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |  ♙  |  ♘  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |  ♙  |     |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |     |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is g8f6
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is74
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 7h to 6f
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |     |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |     |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |  ♞  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |  ♟  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |  ♙  |  ♘  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |  ♙  |     |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |     |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player White, enter your move: your move is /quit
+Game abandoned by White player. Score: ?-?
+wR,wN,wB,wQ,wK,wB,,wR,wP,wP,wP,wP,,wP,wP,wP,,,,,wP,wN,,,,,,,,,,,,,,bP,,,,,,,,,,bN,,,bP,bP,bP,,bP,bP,bP,bP,bR,bN,bB,bQ,bK,bB,,bR, ?-?
+  -> [0;32mreference position: OK[0m
+  -> [0;32mreference result: OK[0m
+  -> [0m(exit code=0)
 [0;33m> test/data/1-leg-pawn-1.txt[0m
 Player White, enter your move: your move is e2e4
 valid input
@@ -73,11 +1196,382 @@ the move is possible according to possible_move
 destination square is empty or has a piece of another color
 Pawn is not capturing a piece in front of it 
 the path is clear
-   ref:[[0;32mwR,wN,wB,wQ,wK,wB,wN,wR,wP,wP,,,,,wP,wP,,,,wP,,wP,,,,,,bP,,,,,,,,,wP,,,,,,,,,,,,bP,bP,bP,,,bP,bP,bP,bR,bN,bB,bQ,bK,bB,bN,bR,[0m]
-   you:[[0;31mthe[0m]
-   ref:[[0;32m?-?[0m]
-   you:[[0;31mpath[0m]
- -> [0;31m[test error] (exit code=139) [0m /home/noix/Documents/dossier_unistra/1A/oop/Chess_Game/chess ended in error for game test/data/1-leg-pawn-1.txt (around move 139)
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 5b to 5d
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |  ♙  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |  ♙  |     |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is e7e5
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is74
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 5g to 5e
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |  ♟  |     |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |     |  ♟  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |  ♙  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |  ♙  |     |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player White, enter your move: your move is d2d4
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 4b to 4d
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |  ♟  |     |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |     |  ♟  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |  ♙  |  ♙  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |     |     |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is e5d4
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is74
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 5e to 4d
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |  ♟  |     |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |  ♟  |  ♙  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |     |     |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player White, enter your move: your move is f2f3
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 6b to 6c
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |  ♟  |     |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |  ♟  |  ♙  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |  ♙  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |     |     |     |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is d4d3
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is74
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 4d to 4c
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |  ♟  |     |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |  ♙  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |  ♟  |     |  ♙  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |     |     |     |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player White, enter your move: your move is c2d3
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 3b to 4c
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |  ♟  |     |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |  ♙  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |  ♙  |     |  ♙  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |     |     |     |     |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is d7d5
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is74
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 4g to 4e
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |     |     |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |  ♟  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |  ♙  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |  ♙  |     |  ♙  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |     |     |     |     |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player White, enter your move: your move is e4e5
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 5d to 5e
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |     |     |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |  ♟  |  ♙  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |  ♙  |     |  ♙  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |     |     |     |     |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is d5d4
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is74
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 4e to 4d
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |     |     |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |     |  ♙  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |  ♟  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |  ♙  |     |  ♙  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |     |     |     |     |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player White, enter your move: your move is /quit
+Game abandoned by White player. Score: ?-?
+wR,wN,wB,wQ,wK,wB,wN,wR,wP,wP,,,,,wP,wP,,,,wP,,wP,,,,,,bP,,,,,,,,,wP,,,,,,,,,,,,bP,bP,bP,,,bP,bP,bP,bR,bN,bB,bQ,bK,bB,bN,bR, ?-?
+  -> [0;32mreference position: OK[0m
+  -> [0;32mreference result: OK[0m
+  -> [0m(exit code=0)
 [0;33m> test/data/1-ill-bishop-1.txt[0m
 Player White, enter your move: your move is d2d4
 valid input
@@ -89,11 +1583,263 @@ the move is possible according to possible_move
 destination square is empty or has a piece of another color
 Pawn is not capturing a piece in front of it 
 the path is clear
-   ref:[[0;32mwR,wN,,wQ,wK,wB,wN,wR,wP,wP,wP,,wP,wP,wP,wP,,,,,,,,,,,,wP,,,,wB,,,,bP,,bB,,,,,,,,bP,,,bP,bP,bP,,bP,,bP,bP,bR,bN,,bQ,bK,bB,bN,bR,[0m]
-   you:[[0;31mthe[0m]
-   ref:[[0;32m?-?[0m]
-   you:[[0;31mpath[0m]
- -> [0;31m[test error] (exit code=139) [0m /home/noix/Documents/dossier_unistra/1A/oop/Chess_Game/chess ended in error for game test/data/1-ill-bishop-1.txt (around move 139)
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 4b to 4d
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |  ♙  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |     |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is d7d5
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is74
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 4g to 4e
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |     |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |  ♟  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |  ♙  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |     |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player White, enter your move: your move is c1g5
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 3a to 7e
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |     |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |  ♟  |     |     |  ♗  |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |  ♙  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |     |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |     |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is f8b5
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+Invalid move board deplace possible_move 5ra piece  
+invalid move
+Player Black, enter your move: your move is f7f6
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is74
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 6g to 6f
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |     |  ♟  |     |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |  ♟  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |  ♟  |     |     |  ♗  |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |  ♙  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |     |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |     |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player White, enter your move: your move is g5d8
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+The path is not clear
+invalid move
+Player White, enter your move: your move is g5h4
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 7e to 8d
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |     |  ♟  |     |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |  ♟  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |  ♟  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |  ♙  |     |     |     |  ♗  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |     |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |     |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is c8b7
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square has a piece of your own
+invalid move
+Player Black, enter your move: your move is c8d8
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+Invalid move board deplace possible_move 5ra piece  
+invalid move
+Player Black, enter your move: your move is c8f5
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is74
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 3h to 6e
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |     |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |     |  ♟  |     |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |  ♟  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |  ♟  |     |  ♝  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |  ♙  |     |     |     |  ♗  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |     |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |     |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player White, enter your move: your move is /quit
+Game abandoned by White player. Score: ?-?
+wR,wN,,wQ,wK,wB,wN,wR,wP,wP,wP,,wP,wP,wP,wP,,,,,,,,,,,,wP,,,,wB,,,,bP,,bB,,,,,,,,bP,,,bP,bP,bP,,bP,,bP,bP,bR,bN,,bQ,bK,bB,bN,bR, ?-?
+  -> [0;32mreference position: OK[0m
+  -> [0;32mreference result: OK[0m
+  -> [0m(exit code=0)
 [0;33m> test/data/1-ill-diagonal-obstacle.txt[0m
 Player White, enter your move: your move is c1e3
 valid input
@@ -127,11 +1873,324 @@ the move is possible according to possible_move
 destination square is empty or has a piece of another color
 Pawn is not capturing a piece in front of it 
 the path is clear
-   ref:[[0;32mwR,wN,,,wK,wB,wN,wR,wP,wP,,,wP,wP,wP,wP,,,wP,wP,,,,,wQ,,,,,wB,,,bQ,,,,,bB,,,,,bP,bP,,,,,bP,bP,,,bP,bP,bP,bP,bR,bN,,,bK,bB,bN,bR,[0m]
-   you:[[0;31mthe[0m]
-   ref:[[0;32m?-?[0m]
-   you:[[0;31mpath[0m]
- -> [0;31m[test error] (exit code=139) [0m /home/noix/Documents/dossier_unistra/1A/oop/Chess_Game/chess ended in error for game test/data/1-ill-diagonal-obstacle.txt (around move 139)
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 4b to 4c
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |  ♙  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |     |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is c8e6
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+The path is not clear
+invalid move
+Player Black, enter your move: your move is f8d6
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+The path is not clear
+invalid move
+Player Black, enter your move: your move is d7d6
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is74
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 4g to 4f
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |     |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |  ♟  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |  ♙  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |     |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player White, enter your move: your move is c1f4
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 3a to 6d
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |     |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |  ♟  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |     |  ♗  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |  ♙  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |     |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |     |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is c8f5
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is74
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 3h to 6e
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |     |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |     |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |  ♟  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |     |     |  ♝  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |     |  ♗  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |  ♙  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |     |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |     |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player White, enter your move: your move is c2c3
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 3b to 3c
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |     |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |     |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |  ♟  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |     |     |  ♝  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |     |  ♗  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |  ♙  |  ♙  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |     |     |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |     |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is c7c6
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is74
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 3g to 3f
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |     |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |     |     |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |  ♟  |  ♟  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |     |     |  ♝  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |     |  ♗  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |  ♙  |  ♙  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |     |     |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |     |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player White, enter your move: your move is d1a4
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 4a to 1d
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |     |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |     |     |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |  ♟  |  ♟  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |     |     |  ♝  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |  ♕  |     |     |     |     |  ♗  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |  ♙  |  ♙  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |     |     |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |     |     |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is d8a5
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is74
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 4h to 1e
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |     |     |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |     |     |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |  ♟  |  ♟  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |  ♛  |     |     |     |     |  ♝  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |  ♕  |     |     |     |     |  ♗  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |  ♙  |  ♙  |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |     |     |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |     |     |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player White, enter your move: your move is /quit
+Game abandoned by White player. Score: ?-?
+wR,wN,,,wK,wB,wN,wR,wP,wP,,,wP,wP,wP,wP,,,wP,wP,,,,,wQ,,,,,wB,,,bQ,,,,,bB,,,,,bP,bP,,,,,bP,bP,,,bP,bP,bP,bP,bR,bN,,,bK,bB,bN,bR, ?-?
+  -> [0;32mreference position: OK[0m
+  -> [0;32mreference result: OK[0m
+  -> [0m(exit code=0)
 [0;33m> test/data/1-ill-knight-1.txt[0m
 Player White, enter your move: your move is b1d2
 valid input
@@ -152,11 +2211,130 @@ the move is possible according to possible_move
 destination square is empty or has a piece of another color
 Pawn is not capturing a piece in front of it 
 the path is clear
-   ref:[[0;32mwR,,wB,wQ,wK,wB,wN,wR,wP,wP,wP,wP,wP,wP,wP,wP,,,,,,,,,,,,,wN,,,,,,,,,,,,,,,,,bN,,,bP,bP,bP,bP,bP,bP,bP,bP,bR,bN,bB,bQ,bK,bB,,bR,[0m]
-   you:[[0;31mthe[0m]
-   ref:[[0;32m?-?[0m]
-   you:[[0;31mpath[0m]
- -> [0;31m[test error] (exit code=139) [0m /home/noix/Documents/dossier_unistra/1A/oop/Chess_Game/chess ended in error for game test/data/1-ill-knight-1.txt (around move 139)
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 2a to 3c
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |  ♘  |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |     |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is g8e7
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square has a piece of your own
+invalid move
+Player Black, enter your move: your move is g8f6
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is74
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 7h to 6f
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |     |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |  ♞  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |  ♘  |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |     |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player White, enter your move: your move is c3b4
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+Invalid move board deplace possible_move 5ra piece  
+invalid move
+Player White, enter your move: your move is c3e4
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 3c to 5d
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |     |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |  ♞  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |  ♘  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |     |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is /quit
+Game abandoned by Black player. Score: ?-?
+wR,,wB,wQ,wK,wB,wN,wR,wP,wP,wP,wP,wP,wP,wP,wP,,,,,,,,,,,,,wN,,,,,,,,,,,,,,,,,bN,,,bP,bP,bP,bP,bP,bP,bP,bP,bR,bN,bB,bQ,bK,bB,,bR, ?-?
+  -> [0;32mreference position: OK[0m
+  -> [0;32mreference result: OK[0m
+  -> [0m(exit code=0)
 [0;33m> test/data/1-ill-line-obstacle.txt[0m
 Player White, enter your move: your move is a1a3
 valid input
@@ -179,11 +2357,551 @@ the move is possible according to possible_move
 destination square is empty or has a piece of another color
 Pawn is not capturing a piece in front of it 
 the path is clear
-   ref:[[0;32m,wN,wB,wQ,wK,wB,wN,wR,,,wP,,wP,,wP,wP,,wP,,wP,wR,wP,,,wP,,,,,,,,bP,,,,,,,,,,,bP,bR,bP,,,,bP,bP,,bP,,bP,bP,,bN,bB,bQ,bK,bB,bN,bR,[0m]
-   you:[[0;31mthe[0m]
-   ref:[[0;32m?-?[0m]
-   you:[[0;31mpath[0m]
- -> [0;31m[test error] (exit code=139) [0m /home/noix/Documents/dossier_unistra/1A/oop/Chess_Game/chess ended in error for game test/data/1-ill-line-obstacle.txt (around move 139)
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 1b to 1d
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |  ♙  |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |     |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is a8a6
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+The path is not clear
+invalid move
+Player Black, enter your move: your move is a7a5
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is74
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 1g to 1e
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |     |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |  ♟  |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |  ♙  |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |     |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player White, enter your move: your move is a1a3
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 1a to 1c
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |     |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |  ♟  |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |  ♙  |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |  ♖  |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |     |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |     |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is a8a6
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is74
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 1h to 1f
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |     |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |     |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |  ♜  |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |  ♟  |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |  ♙  |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |  ♖  |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |     |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |     |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player White, enter your move: your move is a3h3
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 1c to 8c
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |     |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |     |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |  ♜  |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |  ♟  |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |  ♙  |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |     |     |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |     |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |     |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is a6h6
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is74
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 1f to 8f
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |     |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |     |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |  ♟  |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |  ♙  |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |     |     |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |     |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |     |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player White, enter your move: your move is h3e3
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 8c to 5c
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |     |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |     |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |  ♟  |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |  ♙  |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |  ♖  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |     |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |     |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is h6e6
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is74
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 8f to 5f
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |     |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |     |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |  ♜  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |  ♟  |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |  ♙  |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |  ♖  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |     |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |     |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player White, enter your move: your move is d2d3
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 4b to 4c
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |     |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |     |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |  ♜  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |  ♟  |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |  ♙  |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |  ♙  |  ♖  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |     |  ♙  |  ♙  |     |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |     |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is d7d6
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is74
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 4g to 4f
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |     |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |     |  ♟  |  ♟  |     |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |  ♟  |  ♜  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |  ♟  |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |  ♙  |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |  ♙  |  ♖  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |     |  ♙  |  ♙  |     |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |     |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player White, enter your move: your move is f2f3
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 6b to 6c
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |     |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |     |  ♟  |  ♟  |     |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |  ♟  |  ♜  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |  ♟  |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |  ♙  |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |  ♙  |  ♖  |  ♙  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |     |  ♙  |  ♙  |     |  ♙  |     |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |     |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is f7f6
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is74
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 6g to 6f
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |     |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |     |  ♟  |  ♟  |     |  ♟  |     |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |  ♟  |  ♜  |  ♟  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |  ♟  |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |  ♙  |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |  ♙  |  ♖  |  ♙  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |     |  ♙  |  ♙  |     |  ♙  |     |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |     |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player White, enter your move: your move is e3c3
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+The path is not clear
+invalid move
+Player White, enter your move: your move is e3g3
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+The path is not clear
+invalid move
+Player White, enter your move: your move is b2b3
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 2b to 2c
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |     |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |     |  ♟  |  ♟  |     |  ♟  |     |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |  ♟  |  ♜  |  ♟  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |  ♟  |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |  ♙  |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |  ♙  |     |  ♙  |  ♖  |  ♙  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |     |     |  ♙  |     |  ♙  |     |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |     |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is e6c6
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+The path is not clear
+invalid move
+Player Black, enter your move: your move is e6g6
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+The path is not clear
+invalid move
+Player Black, enter your move: your move is /quit
+Game abandoned by Black player. Score: ?-?
+,wN,wB,wQ,wK,wB,wN,wR,,,wP,,wP,,wP,wP,,wP,,wP,wR,wP,,,wP,,,,,,,,bP,,,,,,,,,,,bP,bR,bP,,,,bP,bP,,bP,,bP,bP,,bN,bB,bQ,bK,bB,bN,bR, ?-?
+  -> [0;32mreference position: OK[0m
+  -> [0;32mreference result: OK[0m
+  -> [0m(exit code=0)
 [0;33m> test/data/1-ill-pawn-1.txt[0m
 Player White, enter your move: your move is e2e4
 valid input
@@ -195,11 +2913,362 @@ the move is possible according to possible_move
 destination square is empty or has a piece of another color
 Pawn is not capturing a piece in front of it 
 the path is clear
-   ref:[[0;32mwR,wN,wB,wQ,wK,,wN,wR,wP,wP,wP,,,wP,wP,wP,,,,,,,,,,,,,wP,,,,,,bP,wP,bP,bP,,,bP,,,,,,,,bP,,,bP,,,bP,bP,bR,bN,bB,bQ,bK,bB,bN,bR,[0m]
-   you:[[0;31mthe[0m]
-   ref:[[0;32m?-?[0m]
-   you:[[0;31mpath[0m]
- -> [0;31m[test error] (exit code=139) [0m /home/noix/Documents/dossier_unistra/1A/oop/Chess_Game/chess ended in error for game test/data/1-ill-pawn-1.txt (around move 139)
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 5b to 5d
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |  ♙  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |  ♙  |     |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is e7e5
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is74
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 5g to 5e
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |  ♟  |     |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |     |  ♟  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |  ♙  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |  ♙  |     |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player White, enter your move: your move is e4e5
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawns can't capture a piece in front of them
+invalid move
+Player White, enter your move: your move is d2d4
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 4b to 4d
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |  ♟  |     |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |     |  ♟  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |  ♙  |  ♙  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |     |     |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is e5f4
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+invalid move
+Player Black, enter your move: your move is f7f5
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is74
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 6g to 6e
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |  ♟  |     |     |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |     |  ♟  |  ♟  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |  ♙  |  ♙  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |     |     |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player White, enter your move: your move is f2f1
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+Invalid move board deplace possible_move 5ra piece  
+invalid move
+Player White, enter your move: your move is f1a6
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 6a to 1f
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |  ♟  |     |     |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |  ♗  |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |     |  ♟  |  ♟  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |  ♙  |  ♙  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |     |     |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |  ♗  |  ♕  |  ♔  |     |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is a7a6
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawns can't capture a piece in front of them
+invalid move
+Player Black, enter your move: your move is a7b6
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+invalid move
+Player Black, enter your move: your move is b7a6
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is74
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 2g to 1f
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |     |  ♟  |  ♟  |     |     |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |  ♟  |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |     |  ♟  |  ♟  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |  ♙  |  ♙  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |     |     |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |  ♗  |  ♕  |  ♔  |     |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player White, enter your move: your move is d4d5
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 4d to 4e
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |     |  ♟  |  ♟  |     |     |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |  ♟  |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |  ♙  |  ♟  |  ♟  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |  ♙  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |     |     |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |  ♗  |  ♕  |  ♔  |     |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is a7a6
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square has a piece of your own
+invalid move
+Player Black, enter your move: your move is c7c5
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is74
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 3g to 3e
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |     |     |  ♟  |     |     |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |  ♟  |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |  ♟  |  ♙  |  ♟  |  ♟  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |  ♙  |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |  ♙  |  ♙  |  ♙  |     |     |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |  ♗  |  ♕  |  ♔  |     |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player White, enter your move: your move is /quit
+Game abandoned by White player. Score: ?-?
+wR,wN,wB,wQ,wK,,wN,wR,wP,wP,wP,,,wP,wP,wP,,,,,,,,,,,,,wP,,,,,,bP,wP,bP,bP,,,bP,,,,,,,,bP,,,bP,,,bP,bP,bR,bN,bB,bQ,bK,bB,bN,bR, ?-?
+  -> [0;32mreference position: OK[0m
+  -> [0;32mreference result: OK[0m
+  -> [0m(exit code=0)
 [0;33m> test/data/1-ill-rook-1.txt[0m
 Player White, enter your move: your move is a1a2
 valid input
@@ -220,8 +3289,293 @@ the move is possible according to possible_move
 destination square is empty or has a piece of another color
 Pawn is not capturing a piece in front of it 
 the path is clear
-   ref:[[0;32m,wN,wB,wQ,wK,wB,wN,wR,,wP,wP,wP,wP,wP,wP,wP,,,,,,,,,,,,,,wR,,,bP,wP,,,,,,,,,,,,,,,bR,,bP,bP,bP,bP,bP,bP,,bN,bB,bQ,bK,bB,bN,bR,[0m]
-   you:[[0;31mthe[0m]
-   ref:[[0;32m?-?[0m]
-   you:[[0;31mpath[0m]
- -> [0;31m[test error] (exit code=139) [0m /home/noix/Documents/dossier_unistra/1A/oop/Chess_Game/chess ended in error for game test/data/1-ill-rook-1.txt (around move 139)
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 1b to 1d
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |  ♙  |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |     |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is a8a5
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+The path is not clear
+invalid move
+Player Black, enter your move: your move is b7b5
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is74
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 2g to 2e
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |     |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |  ♟  |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |  ♙  |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |     |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player White, enter your move: your move is a4b5
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 1d to 2e
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♟  |     |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |     |  ♙  |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |     |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is a7a5
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is74
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 1g to 1e
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |     |     |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |  ♟  |  ♙  |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |     |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |  ♖  |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player White, enter your move: your move is a1b4
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+Invalid move board deplace possible_move 5ra piece  
+invalid move
+Player White, enter your move: your move is a1a4
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 1a to 1d
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |  ♜  |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |     |     |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |  ♟  |  ♙  |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |  ♖  |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |     |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |     |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is a8b8
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square has a piece of your own
+invalid move
+Player Black, enter your move: your move is a8a7
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is74
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 1h to 1g
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |     |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♜  |     |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |  ♟  |  ♙  |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |  ♖  |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |     |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |     |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player White, enter your move: your move is a4f4
+valid input
+valid input
+origin square has a piece inside
+dest is different from orig
+player is moving his own piece
+the move is possible according to possible_move
+destination square is empty or has a piece of another color
+Pawn is not capturing a piece in front of it 
+the path is clear
+starting the willputincheck 
+king position is04
+not in check
+nearly finished willputincheck
+etape 4
+etape5
+Piece moved from 1d to 6d
+first move is set to false
+current board
+
+     a     b     c     d     e     f     g     h    
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+8 |     |  ♞  |  ♝  |  ♛  |  ♚  |  ♝  |  ♞  |  ♜  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+7 |  ♜  |     |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |  ♟  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+6 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+5 |  ♟  |  ♙  |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+4 |     |     |     |     |     |  ♖  |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+3 |     |     |     |     |     |     |     |     |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+2 |     |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |  ♙  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+1 |     |  ♘  |  ♗  |  ♕  |  ♔  |  ♗  |  ♘  |  ♖  |
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+Player Black, enter your move: your move is /quit
+Game abandoned by Black player. Score: ?-?
+,wN,wB,wQ,wK,wB,wN,wR,,wP,wP,wP,wP,wP,wP,wP,,,,,,,,,,,,,,wR,,,bP,wP,,,,,,,,,,,,,,,bR,,bP,bP,bP,bP,bP,bP,,bN,bB,bQ,bK,bB,bN,bR, ?-?
+  -> [0;32mreference position: OK[0m
+  -> [0;32mreference result: OK[0m
+  -> [0m(exit code=0)

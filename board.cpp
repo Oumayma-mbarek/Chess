@@ -229,30 +229,16 @@ bool Board::deplace(Spot orig, Spot dest,Couleur turn,bool actualmove, bool chec
     }
 
 
+
+
     //check the path is clear 
-    if (p_orig->get_symbole() != "\u265E" && p_orig->get_symbole() != "\u2658"){
-        int x = orig.get_row();
-        int y = orig.get_col();
-        while (x != dest.get_row() || y != dest.get_col()){
-            if (x < dest.get_row()){
-                x++;
-            }
-            if (x > dest.get_row()){
-                x--;
-            }
-            if (y < dest.get_col()){
-                y++;
-            }
-            if (y > dest.get_col()){
-                y--;
-            }
-            if ((x != dest.get_row() || y != dest.get_col()) && board[x][y] != nullptr){
-                if(actualmove) cout << "The path is not clear" << endl;
-                return false;
-            }
-        }
+
+    if( !pathisclear(orig,dest)){
+        if(actualmove) cout << "The path is not clear" << endl;
+        return false;
     }
     if (actualmove) cout << "the path is clear" << endl;
+   
 
     // Check if the move will put the player in check (i added the chektest parameter to avoid recursion when testing check state)
     if (!checktest && willputincheck(orig, dest, turn)){
@@ -291,6 +277,43 @@ bool Board::deplace(Spot orig, Spot dest,Couleur turn,bool actualmove, bool chec
 //--------------------------------------------------------------
 //--------------------------------------------------------------
 
+bool Board::pathisclear(Spot orig, Spot dest){
+    
+    
+    if (board[orig.get_row()][orig.get_col()]->get_symbole() != "\u265E" && board[orig.get_row()][orig.get_col()]->get_symbole() != "\u2658"){
+        int x = orig.get_row();
+        int y = orig.get_col();
+        while (x != dest.get_row() || y != dest.get_col()){
+            if (x < dest.get_row()){
+                x++;
+            }
+            if (x > dest.get_row()){
+                x--;
+            }
+            if (y < dest.get_col()){
+                y++;
+            }
+            if (y > dest.get_col()){
+                y--;
+            }
+            if ((x != dest.get_row() || y != dest.get_col()) && board[x][y] != nullptr){
+                return false;
+            }
+        }
+    }
+    return true;
+
+}
+
+//--------------------------------------------------------------
+//--------------------------------------------------------------
+
+
+
+
+
+
+
 bool Board::incheck(Couleur turn){
     bool kingsposfound=false;
     Spot king_pos(0,0);
@@ -305,15 +328,19 @@ bool Board::incheck(Couleur turn){
         }
     }
 
-    if (kingsposfound==false) return false; 
-    Piece* King_p=board[king_pos.get_row()][king_pos.get_col()];
+    if (kingsposfound==false){
+        cout << "king not found" << endl;
+        return false;
+    }  
+    //Piece* King_p=board[king_pos.get_row()][king_pos.get_col()];
+    cout << "king position is"<< king_pos.get_row() << king_pos.get_col() << endl;
     for(int row=0;row<8;row++){
         for(int col=0;col<8;col++){
             Piece* orig_p=board[row][col];
-            Spot orig= orig_p->get_pos();
-            if(King_p->possible_move(orig,king_pos) && orig_p != nullptr && orig_p->get_color()!= turn ) {
+            Spot orig= Spot(row,col);
+            if(orig_p != nullptr && orig_p->get_color()!= turn && orig_p->possible_move(orig,king_pos) && pathisclear(orig,king_pos)) {
+                cout << turn << "king in check by " << orig.get_row() << orig.get_col() << endl;
                 return true;
-                cout << turn << "king in check" << endl;
             }
         
         }
@@ -337,6 +364,7 @@ bool Board::willputincheck(Spot orig, Spot dest,Couleur turn){
     board[dest.get_row()][dest.get_col()]=p_orig;
     board[orig.get_row()][orig.get_col()]=nullptr;
 
+    cout << "starting the willputincheck "<< endl;
     bool check=incheck(turn);
     
     //undo the move
@@ -344,6 +372,7 @@ bool Board::willputincheck(Spot orig, Spot dest,Couleur turn){
     board[old_row][old_col] = p_orig;
     board[dest.get_row()][dest.get_col()] = p_dest;
 
+    cout << "nearly finished willputincheck" << endl;
     return check;
 }
 
