@@ -1,0 +1,333 @@
+\doxysection{Board Class Reference}
+\hypertarget{classBoard}{}\label{classBoard}\index{Board@{Board}}
+
+
+Represents a Chess board .This class stores white and black pieces as well as the chess board at each iteration.  
+
+
+
+
+{\ttfamily \#include $<$board.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classBoard_a9ee491d4fea680cf69b033374a9fdfcb}\label{classBoard_a9ee491d4fea680cf69b033374a9fdfcb} 
+{\bfseries Board} ()
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{classBoard}{Board}. \end{DoxyCompactList}\item 
+\Hypertarget{classBoard_a21ee226fb2f36a5b8b7ee480bdd34ff1}\label{classBoard_a21ee226fb2f36a5b8b7ee480bdd34ff1} 
+void {\bfseries display} () const
+\begin{DoxyCompactList}\small\item\em displays the board with the pieces as emojis \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBoard_a530de4e57dc2a3f3ad7315030a36cc90}{canonicallyprintboard}} (string score)
+\begin{DoxyCompactList}\small\item\em prints the output of the board canonically followed by the score \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classBoard_a734dfb4d661e28a643998101776dd33f}{to\+\_\+string}} (int x)
+\begin{DoxyCompactList}\small\item\em transform an integer to a string. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBoard_ac75a736e416b1d3090a7dc1586597b84}{is\+\_\+empty}} (\mbox{\hyperlink{classSpot}{Spot}} s)
+\begin{DoxyCompactList}\small\item\em checks if a spot on the board has a piece inside or not \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPiece}{Piece}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classBoard_a85d688db8efad2ad422bba82764334cb}{get\+\_\+piece}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em searches for the piece in the spot of row x and col y \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBoard_afb591b09c767c6a48dd6c117a85dba80}{pose\+\_\+piece}} (\mbox{\hyperlink{classPiece}{Piece}} \texorpdfstring{$\ast$}{*}p, \mbox{\hyperlink{classSpot}{Spot}} pos)
+\begin{DoxyCompactList}\small\item\em puts a piece on the specified spot on the board, does not check wheather the move is legal \end{DoxyCompactList}\item 
+\Hypertarget{classBoard_a8e73088adf658caac218a62247040379}\label{classBoard_a8e73088adf658caac218a62247040379} 
+int {\bfseries getnocapture} () const
+\begin{DoxyCompactList}\small\item\em getter of the attribute nocapture \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBoard_aed009faf5bd69608ed69a3e3dd7af364}{setnocapture}} (int nc)
+\begin{DoxyCompactList}\small\item\em setter of the attribute nocapture \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{classBoard_a5864caa098aadd7d7dbb53737ebbcf2a}{askwhichpiecewanted}} ()
+\begin{DoxyCompactList}\small\item\em asks which piece the player wants to promote the pawn to \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBoard_a5161e0ea6a823ff8ddf8dcd78e995ffe}{pathisclear}} (\mbox{\hyperlink{classSpot}{Spot}} orig, \mbox{\hyperlink{classSpot}{Spot}} dest)
+\begin{DoxyCompactList}\small\item\em checks if the path is clear between the origin spot and destination spot, concerns all pieces except for the knight \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBoard_a979c52310e0cc0a09094d862fae52706}{incheck}} (Couleur turn)
+\begin{DoxyCompactList}\small\item\em checks if the king of the current players is in check or not \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBoard_af128448df3d6a7e63cc3380ee8483b26}{willputincheck}} (\mbox{\hyperlink{classSpot}{Spot}} orig, \mbox{\hyperlink{classSpot}{Spot}} dest, Couleur turn)
+\begin{DoxyCompactList}\small\item\em Checks if making a move from the origin square to the destination square puts the player in check. (based on incheck method) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBoard_a6f22d0d0bae848031693fc76df59bf3e}{little\+\_\+castle}} (Couleur turn)
+\begin{DoxyCompactList}\small\item\em implementation of the little castle move \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBoard_ac1e0d9617bed7946da981e5a2a77d309}{big\+\_\+castle}} (Couleur turn)
+\begin{DoxyCompactList}\small\item\em implementaiton of the big castle move \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBoard_a21958320b0fa0b605ae551a34e39509a}{checkmate}} (Couleur turn)
+\begin{DoxyCompactList}\small\item\em specifies if the current player is in checkmate. Implementation \+: iterates over all the pieces of the player and checks if there is a move that can be made. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBoard_a384d08b7eaa46b13eef1de2422ed0c91}{stalemate}} (Couleur turn)
+\begin{DoxyCompactList}\small\item\em specifies if the current player is in stalemate. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBoard_a82610086c695d5ef9d96cd5b4b35ca22}{deplace}} (\mbox{\hyperlink{classSpot}{Spot}} orig, \mbox{\hyperlink{classSpot}{Spot}} dest, Couleur turn, bool actualmove, bool checktest=false)
+\begin{DoxyCompactList}\small\item\em checks if a move from origin square to destination square is legal or not and changes the board accordingly \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a Chess board .This class stores white and black pieces as well as the chess board at each iteration. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classBoard_a5864caa098aadd7d7dbb53737ebbcf2a}\index{Board@{Board}!askwhichpiecewanted@{askwhichpiecewanted}}
+\index{askwhichpiecewanted@{askwhichpiecewanted}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{askwhichpiecewanted()}{askwhichpiecewanted()}}
+{\footnotesize\ttfamily \label{classBoard_a5864caa098aadd7d7dbb53737ebbcf2a} 
+char Board\+::askwhichpiecewanted (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+asks which piece the player wants to promote the pawn to 
+
+\begin{DoxyReturn}{Returns}
+the caracter representing the chosen piece 
+\end{DoxyReturn}
+\Hypertarget{classBoard_ac1e0d9617bed7946da981e5a2a77d309}\index{Board@{Board}!big\_castle@{big\_castle}}
+\index{big\_castle@{big\_castle}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{big\_castle()}{big\_castle()}}
+{\footnotesize\ttfamily \label{classBoard_ac1e0d9617bed7946da981e5a2a77d309} 
+bool Board\+::big\+\_\+castle (\begin{DoxyParamCaption}\item[{Couleur}]{turn}{}\end{DoxyParamCaption})}
+
+
+
+implementaiton of the big castle move 
+
+
+\begin{DoxyParams}{Parameters}
+{\em turn} & the color of the current player\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the move is successful or false otherwise 
+\end{DoxyReturn}
+\Hypertarget{classBoard_a530de4e57dc2a3f3ad7315030a36cc90}\index{Board@{Board}!canonicallyprintboard@{canonicallyprintboard}}
+\index{canonicallyprintboard@{canonicallyprintboard}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{canonicallyprintboard()}{canonicallyprintboard()}}
+{\footnotesize\ttfamily \label{classBoard_a530de4e57dc2a3f3ad7315030a36cc90} 
+void Board\+::canonicallyprintboard (\begin{DoxyParamCaption}\item[{string}]{score}{}\end{DoxyParamCaption})}
+
+
+
+prints the output of the board canonically followed by the score 
+
+
+\begin{DoxyParams}{Parameters}
+{\em score} & the score to display with the canonical position of the board \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classBoard_a21958320b0fa0b605ae551a34e39509a}\index{Board@{Board}!checkmate@{checkmate}}
+\index{checkmate@{checkmate}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{checkmate()}{checkmate()}}
+{\footnotesize\ttfamily \label{classBoard_a21958320b0fa0b605ae551a34e39509a} 
+bool Board\+::checkmate (\begin{DoxyParamCaption}\item[{Couleur}]{turn}{}\end{DoxyParamCaption})}
+
+
+
+specifies if the current player is in checkmate. Implementation \+: iterates over all the pieces of the player and checks if there is a move that can be made. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em turn} & the color of the current player\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the player is in checkmate position, false otherwise 
+\end{DoxyReturn}
+\Hypertarget{classBoard_a82610086c695d5ef9d96cd5b4b35ca22}\index{Board@{Board}!deplace@{deplace}}
+\index{deplace@{deplace}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{deplace()}{deplace()}}
+{\footnotesize\ttfamily \label{classBoard_a82610086c695d5ef9d96cd5b4b35ca22} 
+bool Board\+::deplace (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSpot}{Spot}}}]{orig}{, }\item[{\mbox{\hyperlink{classSpot}{Spot}}}]{dest}{, }\item[{Couleur}]{turn}{, }\item[{bool}]{actualmove}{, }\item[{bool}]{checktest}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+
+
+checks if a move from origin square to destination square is legal or not and changes the board accordingly 
+
+
+\begin{DoxyParams}{Parameters}
+{\em orig} & the origin spot of the piece\\
+\hline
+{\em dest} & the destination spot of the piece\\
+\hline
+{\em turn} & the color of the current player\\
+\hline
+{\em actualmove} & a bool representing if the move is real of just for simulation\\
+\hline
+{\em checktest} & Whether this move is for checking if the player is in check (to avoid recursion with willputincheck).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the move is legal and successful, false otherwise 
+\end{DoxyReturn}
+\Hypertarget{classBoard_a85d688db8efad2ad422bba82764334cb}\index{Board@{Board}!get\_piece@{get\_piece}}
+\index{get\_piece@{get\_piece}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{get\_piece()}{get\_piece()}}
+{\footnotesize\ttfamily \label{classBoard_a85d688db8efad2ad422bba82764334cb} 
+\mbox{\hyperlink{classPiece}{Piece}} \texorpdfstring{$\ast$}{*} Board\+::get\+\_\+piece (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+searches for the piece in the spot of row x and col y 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the row\\
+\hline
+{\em y} & the column\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the piece on board\mbox{[}x\mbox{]}\mbox{[}y\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{classBoard_a979c52310e0cc0a09094d862fae52706}\index{Board@{Board}!incheck@{incheck}}
+\index{incheck@{incheck}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{incheck()}{incheck()}}
+{\footnotesize\ttfamily \label{classBoard_a979c52310e0cc0a09094d862fae52706} 
+bool Board\+::incheck (\begin{DoxyParamCaption}\item[{Couleur}]{turn}{}\end{DoxyParamCaption})}
+
+
+
+checks if the king of the current players is in check or not 
+
+
+\begin{DoxyParams}{Parameters}
+{\em turn} & the color of the current player\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the king is in check , false otherwise 
+\end{DoxyReturn}
+\Hypertarget{classBoard_ac75a736e416b1d3090a7dc1586597b84}\index{Board@{Board}!is\_empty@{is\_empty}}
+\index{is\_empty@{is\_empty}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{is\_empty()}{is\_empty()}}
+{\footnotesize\ttfamily \label{classBoard_ac75a736e416b1d3090a7dc1586597b84} 
+bool Board\+::is\+\_\+empty (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSpot}{Spot}}}]{s}{}\end{DoxyParamCaption})}
+
+
+
+checks if a spot on the board has a piece inside or not 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & the spot to check\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the spot is empty, false otherwise 
+\end{DoxyReturn}
+\Hypertarget{classBoard_a6f22d0d0bae848031693fc76df59bf3e}\index{Board@{Board}!little\_castle@{little\_castle}}
+\index{little\_castle@{little\_castle}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{little\_castle()}{little\_castle()}}
+{\footnotesize\ttfamily \label{classBoard_a6f22d0d0bae848031693fc76df59bf3e} 
+bool Board\+::little\+\_\+castle (\begin{DoxyParamCaption}\item[{Couleur}]{turn}{}\end{DoxyParamCaption})}
+
+
+
+implementation of the little castle move 
+
+
+\begin{DoxyParams}{Parameters}
+{\em turn} & the color of the current player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the move is possible or false otherwise 
+\end{DoxyReturn}
+\Hypertarget{classBoard_a5161e0ea6a823ff8ddf8dcd78e995ffe}\index{Board@{Board}!pathisclear@{pathisclear}}
+\index{pathisclear@{pathisclear}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{pathisclear()}{pathisclear()}}
+{\footnotesize\ttfamily \label{classBoard_a5161e0ea6a823ff8ddf8dcd78e995ffe} 
+bool Board\+::pathisclear (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSpot}{Spot}}}]{orig}{, }\item[{\mbox{\hyperlink{classSpot}{Spot}}}]{dest}{}\end{DoxyParamCaption})}
+
+
+
+checks if the path is clear between the origin spot and destination spot, concerns all pieces except for the knight 
+
+
+\begin{DoxyParams}{Parameters}
+{\em orig} & the origin spot \\
+\hline
+{\em dest} & the destination spot \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classBoard_afb591b09c767c6a48dd6c117a85dba80}\index{Board@{Board}!pose\_piece@{pose\_piece}}
+\index{pose\_piece@{pose\_piece}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{pose\_piece()}{pose\_piece()}}
+{\footnotesize\ttfamily \label{classBoard_afb591b09c767c6a48dd6c117a85dba80} 
+void Board\+::pose\+\_\+piece (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPiece}{Piece}} \texorpdfstring{$\ast$}{*}}]{p}{, }\item[{\mbox{\hyperlink{classSpot}{Spot}}}]{pos}{}\end{DoxyParamCaption})}
+
+
+
+puts a piece on the specified spot on the board, does not check wheather the move is legal 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & a pointer to the piece to be put on the board\\
+\hline
+{\em pos} & the position on the board where to put the piece \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classBoard_aed009faf5bd69608ed69a3e3dd7af364}\index{Board@{Board}!setnocapture@{setnocapture}}
+\index{setnocapture@{setnocapture}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{setnocapture()}{setnocapture()}}
+{\footnotesize\ttfamily \label{classBoard_aed009faf5bd69608ed69a3e3dd7af364} 
+void Board\+::setnocapture (\begin{DoxyParamCaption}\item[{int}]{nc}{}\end{DoxyParamCaption})}
+
+
+
+setter of the attribute nocapture 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nc} & the new value of the nocapture attribute \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classBoard_a384d08b7eaa46b13eef1de2422ed0c91}\index{Board@{Board}!stalemate@{stalemate}}
+\index{stalemate@{stalemate}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{stalemate()}{stalemate()}}
+{\footnotesize\ttfamily \label{classBoard_a384d08b7eaa46b13eef1de2422ed0c91} 
+bool Board\+::stalemate (\begin{DoxyParamCaption}\item[{Couleur}]{turn}{}\end{DoxyParamCaption})}
+
+
+
+specifies if the current player is in stalemate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em turn} & the color of the current player\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the player is in stalemate position, false otherwise 
+\end{DoxyReturn}
+\Hypertarget{classBoard_a734dfb4d661e28a643998101776dd33f}\index{Board@{Board}!to\_string@{to\_string}}
+\index{to\_string@{to\_string}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{to\_string()}{to\_string()}}
+{\footnotesize\ttfamily \label{classBoard_a734dfb4d661e28a643998101776dd33f} 
+string Board\+::to\+\_\+string (\begin{DoxyParamCaption}\item[{int}]{x}{}\end{DoxyParamCaption})}
+
+
+
+transform an integer to a string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the integer to be transformed \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classBoard_af128448df3d6a7e63cc3380ee8483b26}\index{Board@{Board}!willputincheck@{willputincheck}}
+\index{willputincheck@{willputincheck}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{willputincheck()}{willputincheck()}}
+{\footnotesize\ttfamily \label{classBoard_af128448df3d6a7e63cc3380ee8483b26} 
+bool Board\+::willputincheck (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSpot}{Spot}}}]{orig}{, }\item[{\mbox{\hyperlink{classSpot}{Spot}}}]{dest}{, }\item[{Couleur}]{turn}{}\end{DoxyParamCaption})}
+
+
+
+Checks if making a move from the origin square to the destination square puts the player in check. (based on incheck method) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em origin} & The origin square of the move.\\
+\hline
+{\em dest} & The destination square of the move.\\
+\hline
+{\em turn} & The color of the player making the move.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the move puts the player in check, false otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+board.\+hpp\item 
+board.\+cpp\end{DoxyCompactItemize}

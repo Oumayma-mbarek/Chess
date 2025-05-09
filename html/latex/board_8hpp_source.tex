@@ -1,0 +1,69 @@
+\doxysection{board.\+hpp}
+\hypertarget{board_8hpp_source}{}\label{board_8hpp_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ BOARD\_HPP}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ BOARD\_HPP}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}piece.hpp"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}spot.hpp"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}couleur.hpp"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{using\ namespace\ }std\ ;}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classBoard_a9ee491d4fea680cf69b033374a9fdfcb}{Board}}\ \{}
+\DoxyCodeLine{00022\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{classPiece}{Piece}}\ *\ board[8][8];\ \textcolor{comment}{//tableau\ de\ 8x8\ pointeurs\ vers\ pieces}}
+\DoxyCodeLine{00024\ \ \ \ \ vector<Piece*>\ pieces[2];\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{int}\ enpassantw[8];\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{int}\ enpassantb[8];\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{int}\ nocapture;\ }
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{classBoard_a9ee491d4fea680cf69b033374a9fdfcb}{Board}}();\ }
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classBoard_a21ee226fb2f36a5b8b7ee480bdd34ff1}{display}}()\ \textcolor{keyword}{const}\ ;}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classBoard_a530de4e57dc2a3f3ad7315030a36cc90}{canonicallyprintboard}}(\textcolor{keywordtype}{string}\ score);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classBoard_a734dfb4d661e28a643998101776dd33f}{to\_string}}(\textcolor{keywordtype}{int}\ x);\ \textcolor{comment}{//transforme\ un\ entier\ en\ char\ :\ 1-\/>'1'\ }}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classBoard_ac75a736e416b1d3090a7dc1586597b84}{is\_empty}}(\mbox{\hyperlink{classSpot}{Spot}}\ s);}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00072\ \ \ \ \ \mbox{\hyperlink{classPiece}{Piece}}*\ \mbox{\hyperlink{classBoard_a85d688db8efad2ad422bba82764334cb}{get\_piece}}(\textcolor{keywordtype}{int}\ x,\textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classBoard_afb591b09c767c6a48dd6c117a85dba80}{pose\_piece}}(\mbox{\hyperlink{classPiece}{Piece}}*\ p,\ \mbox{\hyperlink{classSpot}{Spot}}\ pos);\ }
+\DoxyCodeLine{00083\ \ \ \ \ }
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classBoard_a8e73088adf658caac218a62247040379}{getnocapture}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classBoard_aed009faf5bd69608ed69a3e3dd7af364}{setnocapture}}(\textcolor{keywordtype}{int}\ nc);}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classBoard_a5864caa098aadd7d7dbb53737ebbcf2a}{askwhichpiecewanted}}();}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classBoard_a5161e0ea6a823ff8ddf8dcd78e995ffe}{pathisclear}}(\mbox{\hyperlink{classSpot}{Spot}}\ orig,\ \mbox{\hyperlink{classSpot}{Spot}}\ dest);}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classBoard_a979c52310e0cc0a09094d862fae52706}{incheck}}(Couleur\ turn);}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00131\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classBoard_af128448df3d6a7e63cc3380ee8483b26}{willputincheck}}(\mbox{\hyperlink{classSpot}{Spot}}\ orig,\ \mbox{\hyperlink{classSpot}{Spot}}\ dest,Couleur\ turn);}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00138\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classBoard_a6f22d0d0bae848031693fc76df59bf3e}{little\_castle}}(Couleur\ turn);}
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00147\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classBoard_ac1e0d9617bed7946da981e5a2a77d309}{big\_castle}}(Couleur\ turn);}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00156\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classBoard_a21958320b0fa0b605ae551a34e39509a}{checkmate}}(Couleur\ turn);}
+\DoxyCodeLine{00157\ }
+\DoxyCodeLine{00165\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classBoard_a384d08b7eaa46b13eef1de2422ed0c91}{stalemate}}(Couleur\ turn);}
+\DoxyCodeLine{00181\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classBoard_a82610086c695d5ef9d96cd5b4b35ca22}{deplace}}(\mbox{\hyperlink{classSpot}{Spot}}\ orig,\ \mbox{\hyperlink{classSpot}{Spot}}\ dest,\ Couleur\ turn,\textcolor{keywordtype}{bool}\ actualmove,\ \textcolor{keywordtype}{bool}\ checktest=\textcolor{keyword}{false});\ \textcolor{comment}{//\ déplace\ une\ pièce\ d’une\ case\ à\ une\ autre.}}
+\DoxyCodeLine{00182\ \};}
+\DoxyCodeLine{00183\ }
+\DoxyCodeLine{00184\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//BOARD\_HPP}}
+
+\end{DoxyCode}

@@ -1,0 +1,106 @@
+\doxysection{Game Class Reference}
+\hypertarget{classGame}{}\label{classGame}\index{Game@{Game}}
+
+
+this class represents the game  
+
+
+
+
+{\ttfamily \#include $<$game.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGame_ad59df6562a58a614fda24622d3715b65}{Game}} ()
+\begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{classGame}{Game} object. \end{DoxyCompactList}\item 
+\Hypertarget{classGame_aa333825d0bca80e91e53c7e23f053405}\label{classGame_aa333825d0bca80e91e53c7e23f053405} 
+void {\bfseries play} ()
+\begin{DoxyCompactList}\small\item\em this method starts the game and handles the turns, player moves and determines the outcome \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classGame_a000bde2e6c093af3e4568d665e84bdf8}{is\+\_\+valid\+\_\+input}} (string const \&cmd)
+\begin{DoxyCompactList}\small\item\em Checks if the input command is valid. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classGame_ac3d2bf9458debcbeb4e7220d6527925b}{is\+\_\+valid\+\_\+input\+\_\+short\+\_\+castling}} (string const \&cmd)
+\begin{DoxyCompactList}\small\item\em Checks if the input command represents a valid short castling move. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classGame_a10bccbc22dde45c21e38fac39a023273}{is\+\_\+valid\+\_\+input\+\_\+long\+\_\+castling}} (string const \&cmd)
+\begin{DoxyCompactList}\small\item\em Checks if the input command represents a valid long castling move. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+this class represents the game 
+
+it manages the game and switching the players 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classGame_ad59df6562a58a614fda24622d3715b65}\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily \label{classGame_ad59df6562a58a614fda24622d3715b65} 
+Game\+::\+Game (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Constructs a new \doxylink{classGame}{Game} object. 
+
+Initializes the game with an empty board. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classGame_a000bde2e6c093af3e4568d665e84bdf8}\index{Game@{Game}!is\_valid\_input@{is\_valid\_input}}
+\index{is\_valid\_input@{is\_valid\_input}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{is\_valid\_input()}{is\_valid\_input()}}
+{\footnotesize\ttfamily \label{classGame_a000bde2e6c093af3e4568d665e84bdf8} 
+bool Game\+::is\+\_\+valid\+\_\+input (\begin{DoxyParamCaption}\item[{string const \&}]{cmd}{}\end{DoxyParamCaption})}
+
+
+
+Checks if the input command is valid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & The input command to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the command is valid, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classGame_a10bccbc22dde45c21e38fac39a023273}\index{Game@{Game}!is\_valid\_input\_long\_castling@{is\_valid\_input\_long\_castling}}
+\index{is\_valid\_input\_long\_castling@{is\_valid\_input\_long\_castling}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{is\_valid\_input\_long\_castling()}{is\_valid\_input\_long\_castling()}}
+{\footnotesize\ttfamily \label{classGame_a10bccbc22dde45c21e38fac39a023273} 
+bool Game\+::is\+\_\+valid\+\_\+input\+\_\+long\+\_\+castling (\begin{DoxyParamCaption}\item[{string const \&}]{cmd}{}\end{DoxyParamCaption})}
+
+
+
+Checks if the input command represents a valid long castling move. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & The input command to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the command represents a valid long castling move, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classGame_ac3d2bf9458debcbeb4e7220d6527925b}\index{Game@{Game}!is\_valid\_input\_short\_castling@{is\_valid\_input\_short\_castling}}
+\index{is\_valid\_input\_short\_castling@{is\_valid\_input\_short\_castling}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{is\_valid\_input\_short\_castling()}{is\_valid\_input\_short\_castling()}}
+{\footnotesize\ttfamily \label{classGame_ac3d2bf9458debcbeb4e7220d6527925b} 
+bool Game\+::is\+\_\+valid\+\_\+input\+\_\+short\+\_\+castling (\begin{DoxyParamCaption}\item[{string const \&}]{cmd}{}\end{DoxyParamCaption})}
+
+
+
+Checks if the input command represents a valid short castling move. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & The input command to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the command represents a valid short castling move, false otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+game.\+hpp\item 
+game.\+cpp\end{DoxyCompactItemize}

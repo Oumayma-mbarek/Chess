@@ -1,0 +1,242 @@
+\doxysection{Piece Class Reference}
+\hypertarget{classPiece}{}\label{classPiece}\index{Piece@{Piece}}
+
+
+this class represents the pieces of the game  
+
+
+
+
+{\ttfamily \#include $<$piece.\+hpp$>$}
+
+Inheritance diagram for Piece\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classPiece}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPiece_a7982583185b2cf6aaa0dfd971cffcfe0}{Piece}} (Couleur C, string sym, int i, \mbox{\hyperlink{classSpot}{Spot}} s, bool \mbox{\hyperlink{classPiece_aa3bc2f47d8d6f6e56d51f79428106d12}{firstmove}}=true)
+\begin{DoxyCompactList}\small\item\em Constructor for the \doxylink{classPiece}{Piece} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPiece_a766a288f5fad58014b77e0c9291ed3b0}{set\+\_\+pos}} (\mbox{\hyperlink{classSpot}{Spot}} s)
+\begin{DoxyCompactList}\small\item\em setter of the postion of a piece \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSpot}{Spot}} \mbox{\hyperlink{classPiece_a55b9482385326c0da200b43a20fb210e}{get\+\_\+pos}} ()
+\begin{DoxyCompactList}\small\item\em getter of the position of the piece \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classPiece_a4be80209d697081020fc2c5e4bca1169}{get\+\_\+symbole}} () const
+\begin{DoxyCompactList}\small\item\em getter of the name of the piece \end{DoxyCompactList}\item 
+Couleur \mbox{\hyperlink{classPiece_a207446d9c1a6750b413aae6935462507}{get\+\_\+color}} () const
+\begin{DoxyCompactList}\small\item\em getter of the color of the piece \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPiece_a236697193d2add8d3872aa8b6813ce79}{get\+\_\+id}} () const
+\begin{DoxyCompactList}\small\item\em getter of the identifier of the piece \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPiece_a47678a20f4a8d60910331924e2550667}{get\+\_\+firstmove}} () const
+\begin{DoxyCompactList}\small\item\em getter of the firstmove attribute \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPiece_adc13c4d935aefe214692a08cef8a65c0}{set\+First\+Move}} (bool t)
+\begin{DoxyCompactList}\small\item\em setter of the firstmove attribute \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classPiece_af8c4854ff84aae9f81f8653eaaece3ce}{possible\+\_\+move}} (\mbox{\hyperlink{classSpot}{Spot}} orig, \mbox{\hyperlink{classSpot}{Spot}} dest)=0
+\begin{DoxyCompactList}\small\item\em checks if a move is possible from origin spot to destination spot \end{DoxyCompactList}\item 
+\Hypertarget{classPiece_a015eeebd12773b9b6ffda27d393f7a26}\label{classPiece_a015eeebd12773b9b6ffda27d393f7a26} 
+void {\bfseries display} ()
+\begin{DoxyCompactList}\small\item\em display the piece \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Couleur \mbox{\hyperlink{classPiece_abeb58424f566e8b3bcf514c731570cf8}{couleur}}
+\item 
+string \mbox{\hyperlink{classPiece_a31462b13a3132c930d15c94ee91fd264}{symbole}}
+\item 
+int \mbox{\hyperlink{classPiece_ac40cffee50da10a50361ff4791fdd528}{id}}
+\item 
+\mbox{\hyperlink{classSpot}{Spot}} \mbox{\hyperlink{classPiece_a38cf147ab5a3a980642bc9875bca860b}{pos}}
+\item 
+bool \mbox{\hyperlink{classPiece_aa3bc2f47d8d6f6e56d51f79428106d12}{firstmove}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+this class represents the pieces of the game 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classPiece_a7982583185b2cf6aaa0dfd971cffcfe0}\index{Piece@{Piece}!Piece@{Piece}}
+\index{Piece@{Piece}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{Piece()}{Piece()}}
+{\footnotesize\ttfamily \label{classPiece_a7982583185b2cf6aaa0dfd971cffcfe0} 
+Piece\+::\+Piece (\begin{DoxyParamCaption}\item[{Couleur}]{C}{, }\item[{string}]{sym}{, }\item[{int}]{i}{, }\item[{\mbox{\hyperlink{classSpot}{Spot}}}]{s}{, }\item[{bool}]{firstmove}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+
+
+Constructor for the \doxylink{classPiece}{Piece} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the piece. \\
+\hline
+{\em colour} & The color of the piece. \\
+\hline
+{\em alive} & Indicates whether the piece is alive (default is true). \\
+\hline
+{\em firstmove} & Indicates whether the piece has moved yet (default is true). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classPiece_a207446d9c1a6750b413aae6935462507}\index{Piece@{Piece}!get\_color@{get\_color}}
+\index{get\_color@{get\_color}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{get\_color()}{get\_color()}}
+{\footnotesize\ttfamily \label{classPiece_a207446d9c1a6750b413aae6935462507} 
+Couleur Piece\+::get\+\_\+color (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+getter of the color of the piece 
+
+\begin{DoxyReturn}{Returns}
+the color of the piece 
+\end{DoxyReturn}
+\Hypertarget{classPiece_a47678a20f4a8d60910331924e2550667}\index{Piece@{Piece}!get\_firstmove@{get\_firstmove}}
+\index{get\_firstmove@{get\_firstmove}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{get\_firstmove()}{get\_firstmove()}}
+{\footnotesize\ttfamily \label{classPiece_a47678a20f4a8d60910331924e2550667} 
+bool Piece\+::get\+\_\+firstmove (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+getter of the firstmove attribute 
+
+\begin{DoxyReturn}{Returns}
+firstmove attribute 
+\end{DoxyReturn}
+\Hypertarget{classPiece_a236697193d2add8d3872aa8b6813ce79}\index{Piece@{Piece}!get\_id@{get\_id}}
+\index{get\_id@{get\_id}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{get\_id()}{get\_id()}}
+{\footnotesize\ttfamily \label{classPiece_a236697193d2add8d3872aa8b6813ce79} 
+int Piece\+::get\+\_\+id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+getter of the identifier of the piece 
+
+\begin{DoxyReturn}{Returns}
+the id of the piece 
+\end{DoxyReturn}
+\Hypertarget{classPiece_a55b9482385326c0da200b43a20fb210e}\index{Piece@{Piece}!get\_pos@{get\_pos}}
+\index{get\_pos@{get\_pos}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{get\_pos()}{get\_pos()}}
+{\footnotesize\ttfamily \label{classPiece_a55b9482385326c0da200b43a20fb210e} 
+\mbox{\hyperlink{classSpot}{Spot}} Piece\+::get\+\_\+pos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+getter of the position of the piece 
+
+\begin{DoxyReturn}{Returns}
+the current position of the piece 
+\end{DoxyReturn}
+\Hypertarget{classPiece_a4be80209d697081020fc2c5e4bca1169}\index{Piece@{Piece}!get\_symbole@{get\_symbole}}
+\index{get\_symbole@{get\_symbole}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{get\_symbole()}{get\_symbole()}}
+{\footnotesize\ttfamily \label{classPiece_a4be80209d697081020fc2c5e4bca1169} 
+string Piece\+::get\+\_\+symbole (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+getter of the name of the piece 
+
+\begin{DoxyReturn}{Returns}
+the name of the piece 
+\end{DoxyReturn}
+\Hypertarget{classPiece_af8c4854ff84aae9f81f8653eaaece3ce}\index{Piece@{Piece}!possible\_move@{possible\_move}}
+\index{possible\_move@{possible\_move}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{possible\_move()}{possible\_move()}}
+{\footnotesize\ttfamily \label{classPiece_af8c4854ff84aae9f81f8653eaaece3ce} 
+virtual bool Piece\+::possible\+\_\+move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSpot}{Spot}}}]{orig}{, }\item[{\mbox{\hyperlink{classSpot}{Spot}}}]{dest}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+checks if a move is possible from origin spot to destination spot 
+
+
+\begin{DoxyParams}{Parameters}
+{\em orig} & the origin spot\\
+\hline
+{\em dest} & the destination spot\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the move is possible, false otherwise 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classBishop_a48262cd80ef6a047a4c5330301868d94}{Bishop}}, \mbox{\hyperlink{classKing_ad90b0a627adf8884c8a7d84c397d2cbf}{King}}, \mbox{\hyperlink{classKnight_add4969d705871afa4e27e9ec5a196bd4}{Knight}}, \mbox{\hyperlink{classPawn_a64b26e13f3f54841bf98c6d1ed5751aa}{Pawn}}, \mbox{\hyperlink{classQueen_ab0054cb38da0f6d38a178329c10700a0}{Queen}}, and \mbox{\hyperlink{classRook_acb70b24ff1bf3e886ef98410b1d749bc}{Rook}}.
+
+\Hypertarget{classPiece_a766a288f5fad58014b77e0c9291ed3b0}\index{Piece@{Piece}!set\_pos@{set\_pos}}
+\index{set\_pos@{set\_pos}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{set\_pos()}{set\_pos()}}
+{\footnotesize\ttfamily \label{classPiece_a766a288f5fad58014b77e0c9291ed3b0} 
+void Piece\+::set\+\_\+pos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSpot}{Spot}}}]{s}{}\end{DoxyParamCaption})}
+
+
+
+setter of the postion of a piece 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & the new position of the piece \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classPiece_adc13c4d935aefe214692a08cef8a65c0}\index{Piece@{Piece}!setFirstMove@{setFirstMove}}
+\index{setFirstMove@{setFirstMove}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{setFirstMove()}{setFirstMove()}}
+{\footnotesize\ttfamily \label{classPiece_adc13c4d935aefe214692a08cef8a65c0} 
+void Piece\+::set\+First\+Move (\begin{DoxyParamCaption}\item[{bool}]{t}{}\end{DoxyParamCaption})}
+
+
+
+setter of the firstmove attribute 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & the new value of firstmove \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classPiece_abeb58424f566e8b3bcf514c731570cf8}\index{Piece@{Piece}!couleur@{couleur}}
+\index{couleur@{couleur}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{couleur}{couleur}}
+{\footnotesize\ttfamily \label{classPiece_abeb58424f566e8b3bcf514c731570cf8} 
+Couleur Piece\+::couleur\hspace{0.3cm}{\ttfamily [protected]}}
+
+the colour of the piece \Hypertarget{classPiece_aa3bc2f47d8d6f6e56d51f79428106d12}\index{Piece@{Piece}!firstmove@{firstmove}}
+\index{firstmove@{firstmove}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{firstmove}{firstmove}}
+{\footnotesize\ttfamily \label{classPiece_aa3bc2f47d8d6f6e56d51f79428106d12} 
+bool Piece\+::firstmove\hspace{0.3cm}{\ttfamily [protected]}}
+
+Indicates whether the piece has moved yet (only useful for the king, the rooks, and the pawns). \Hypertarget{classPiece_ac40cffee50da10a50361ff4791fdd528}\index{Piece@{Piece}!id@{id}}
+\index{id@{id}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily \label{classPiece_ac40cffee50da10a50361ff4791fdd528} 
+int Piece\+::id\hspace{0.3cm}{\ttfamily [protected]}}
+
+a unique identifier for the piece \Hypertarget{classPiece_a38cf147ab5a3a980642bc9875bca860b}\index{Piece@{Piece}!pos@{pos}}
+\index{pos@{pos}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{pos}{pos}}
+{\footnotesize\ttfamily \label{classPiece_a38cf147ab5a3a980642bc9875bca860b} 
+\mbox{\hyperlink{classSpot}{Spot}} Piece\+::pos\hspace{0.3cm}{\ttfamily [protected]}}
+
+the position of the piece on the chess board \Hypertarget{classPiece_a31462b13a3132c930d15c94ee91fd264}\index{Piece@{Piece}!symbole@{symbole}}
+\index{symbole@{symbole}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{symbole}{symbole}}
+{\footnotesize\ttfamily \label{classPiece_a31462b13a3132c930d15c94ee91fd264} 
+string Piece\+::symbole\hspace{0.3cm}{\ttfamily [protected]}}
+
+The name of the piece (represented by its emoji). 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+piece.\+hpp\item 
+piece.\+cpp\end{DoxyCompactItemize}

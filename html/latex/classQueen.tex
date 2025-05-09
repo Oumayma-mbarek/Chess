@@ -1,0 +1,119 @@
+\doxysection{Queen Class Reference}
+\hypertarget{classQueen}{}\label{classQueen}\index{Queen@{Queen}}
+
+
+represents a \doxylink{classQueen}{Queen} piece  
+
+
+
+
+{\ttfamily \#include $<$piece.\+hpp$>$}
+
+Inheritance diagram for Queen\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classQueen}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classQueen_a5285f15d01efc3919ba3b0226f957bc1}{Queen}} (Couleur c, string sym, int i, \mbox{\hyperlink{classSpot}{Spot}} s)
+\begin{DoxyCompactList}\small\item\em a constructor for the \doxylink{classQueen}{Queen} \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classQueen_ab0054cb38da0f6d38a178329c10700a0}{possible\+\_\+move}} (\mbox{\hyperlink{classSpot}{Spot}} orig, \mbox{\hyperlink{classSpot}{Spot}} dest) override
+\begin{DoxyCompactList}\small\item\em check if a move from origin spot to destination spot is legal \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classPiece}{Piece}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPiece_a7982583185b2cf6aaa0dfd971cffcfe0}{Piece}} (Couleur C, string sym, int i, \mbox{\hyperlink{classSpot}{Spot}} s, bool \mbox{\hyperlink{classPiece_aa3bc2f47d8d6f6e56d51f79428106d12}{firstmove}}=true)
+\begin{DoxyCompactList}\small\item\em Constructor for the \doxylink{classPiece}{Piece} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPiece_a766a288f5fad58014b77e0c9291ed3b0}{set\+\_\+pos}} (\mbox{\hyperlink{classSpot}{Spot}} s)
+\begin{DoxyCompactList}\small\item\em setter of the postion of a piece \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSpot}{Spot}} \mbox{\hyperlink{classPiece_a55b9482385326c0da200b43a20fb210e}{get\+\_\+pos}} ()
+\begin{DoxyCompactList}\small\item\em getter of the position of the piece \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classPiece_a4be80209d697081020fc2c5e4bca1169}{get\+\_\+symbole}} () const
+\begin{DoxyCompactList}\small\item\em getter of the name of the piece \end{DoxyCompactList}\item 
+Couleur \mbox{\hyperlink{classPiece_a207446d9c1a6750b413aae6935462507}{get\+\_\+color}} () const
+\begin{DoxyCompactList}\small\item\em getter of the color of the piece \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPiece_a236697193d2add8d3872aa8b6813ce79}{get\+\_\+id}} () const
+\begin{DoxyCompactList}\small\item\em getter of the identifier of the piece \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPiece_a47678a20f4a8d60910331924e2550667}{get\+\_\+firstmove}} () const
+\begin{DoxyCompactList}\small\item\em getter of the firstmove attribute \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPiece_adc13c4d935aefe214692a08cef8a65c0}{set\+First\+Move}} (bool t)
+\begin{DoxyCompactList}\small\item\em setter of the firstmove attribute \end{DoxyCompactList}\item 
+void {\bfseries display} ()
+\begin{DoxyCompactList}\small\item\em display the piece \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classPiece}{Piece}}}
+\begin{DoxyCompactItemize}
+\item 
+Couleur \mbox{\hyperlink{classPiece_abeb58424f566e8b3bcf514c731570cf8}{couleur}}
+\item 
+string \mbox{\hyperlink{classPiece_a31462b13a3132c930d15c94ee91fd264}{symbole}}
+\item 
+int \mbox{\hyperlink{classPiece_ac40cffee50da10a50361ff4791fdd528}{id}}
+\item 
+\mbox{\hyperlink{classSpot}{Spot}} \mbox{\hyperlink{classPiece_a38cf147ab5a3a980642bc9875bca860b}{pos}}
+\item 
+bool \mbox{\hyperlink{classPiece_aa3bc2f47d8d6f6e56d51f79428106d12}{firstmove}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+represents a \doxylink{classQueen}{Queen} piece 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classQueen_a5285f15d01efc3919ba3b0226f957bc1}\index{Queen@{Queen}!Queen@{Queen}}
+\index{Queen@{Queen}!Queen@{Queen}}
+\doxysubsubsection{\texorpdfstring{Queen()}{Queen()}}
+{\footnotesize\ttfamily \label{classQueen_a5285f15d01efc3919ba3b0226f957bc1} 
+Queen\+::\+Queen (\begin{DoxyParamCaption}\item[{Couleur}]{c}{, }\item[{string}]{sym}{, }\item[{int}]{i}{, }\item[{\mbox{\hyperlink{classSpot}{Spot}}}]{s}{}\end{DoxyParamCaption})}
+
+
+
+a constructor for the \doxylink{classQueen}{Queen} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the colour of the \doxylink{classQueen}{Queen} \\
+\hline
+{\em sym} & the name of the \doxylink{classQueen}{Queen} \\
+\hline
+{\em i} & the identifier of the \doxylink{classQueen}{Queen} \\
+\hline
+{\em s} & the current position of the \doxylink{classQueen}{Queen} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classQueen_ab0054cb38da0f6d38a178329c10700a0}\index{Queen@{Queen}!possible\_move@{possible\_move}}
+\index{possible\_move@{possible\_move}!Queen@{Queen}}
+\doxysubsubsection{\texorpdfstring{possible\_move()}{possible\_move()}}
+{\footnotesize\ttfamily \label{classQueen_ab0054cb38da0f6d38a178329c10700a0} 
+bool Queen\+::possible\+\_\+move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSpot}{Spot}}}]{orig}{, }\item[{\mbox{\hyperlink{classSpot}{Spot}}}]{dest}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+check if a move from origin spot to destination spot is legal 
+
+
+\begin{DoxyParams}{Parameters}
+{\em orig} & the origing square where the queen currently is \\
+\hline
+{\em dest} & the destination spot where the queen want to go \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the move is possible, false otherwise 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classPiece_af8c4854ff84aae9f81f8653eaaece3ce}{Piece}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+piece.\+hpp\item 
+piece.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,88 @@
+\chapter{Chess Game Project in C++ ♚}
+\hypertarget{md_README}{}\label{md_README}\index{Chess Game Project in C++ ♚@{Chess Game Project in C++ ♚}}
+\label{md_README_autotoc_md0}%
+\Hypertarget{md_README_autotoc_md0}%
+
+
+{\bfseries{Author\+:}} Oumayma MBAREK {\itshape I affirm that this is my own personal work.}
+
+\DoxyHorRuler{0}
+\hypertarget{md_README_autotoc_md2}{}\doxysection{\texorpdfstring{🧠 Project Overview}{🧠 Project Overview}}\label{md_README_autotoc_md2}
+This project was implemented as part of the object oriented programming class in \href{https://www.telecom-physique.fr/}{\texttt{ {\bfseries{Telecom Physique Strasbourg}}}} engineering school
+
+This project is a simplified implementation of a chess game in C++. It includes the creation and management of the game board, pieces, and movement logic. The main design is object-\/oriented, with classes representing the board, pieces, and game control flow. The most challenging part was the initial development, especially building the display logic and managing how to represent and manipulate the board state. I also struggled with deciding which methods should belong to which class, especially early on. Debugging segmentation faults was also a major difficulty, especially when dealing with pointers and class interactions.
+
+\DoxyHorRuler{0}
+\hypertarget{md_README_autotoc_md4}{}\doxysection{\texorpdfstring{⚙️ How to Compile and Run}{⚙️ How to Compile and Run}}\label{md_README_autotoc_md4}
+\hypertarget{md_README_autotoc_md5}{}\doxysubsection{\texorpdfstring{1 ─ Download dependencies and Install}{1 ─ Download dependencies and Install}}\label{md_README_autotoc_md5}
+
+\begin{DoxyItemize}
+\item If G++ is not installed on your computer, run these commands, as the {\ttfamily makefile} requires G++ as the compiler.
+\end{DoxyItemize}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ sudo\ apt\ update}
+\DoxyCodeLine{\$\ sudo\ apt\ install\ build-\/essential}
+\DoxyCodeLine{\$\ sudo\ apt\ install\ g++}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyItemize}
+\item Clone the repository with git
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md6}{}\doxysubsection{\texorpdfstring{2 ─ Use Makefile}{2 ─ Use Makefile}}\label{md_README_autotoc_md6}
+Compile the program run the following command \+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ make}
+
+\end{DoxyCode}
+\hypertarget{md_README_autotoc_md7}{}\doxysubsection{\texorpdfstring{3 ─ Run the program}{3 ─ Run the program}}\label{md_README_autotoc_md7}
+To begin a game, run the following command \+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ ./echecs}
+
+\end{DoxyCode}
+ \hypertarget{md_README_autotoc_md8}{}\doxysubsection{\texorpdfstring{4 ─ Documentation}{4 ─ Documentation}}\label{md_README_autotoc_md8}
+You can use \href{https://www.doxygen.nl/}{\texttt{ Doxygen}} to generate documentation.
+
+To install doxygen, run \+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ sudo\ apt\ install\ doxygen}
+
+\end{DoxyCode}
+
+
+To generate documentation, use the following command \+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ make\ doc}
+\DoxyCodeLine{xdg-\/open\ html/index.html}
+
+\end{DoxyCode}
+
+
+PDF documentation is also available via\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make\ pdf}
+\DoxyCodeLine{xdg-\/open\ docs/latex/refman.pdf}
+
+\end{DoxyCode}
+
+
+Then open {\ttfamily documentation/html/index.\+html} in your browser\hypertarget{md_README_autotoc_md9}{}\doxysection{\texorpdfstring{♟️ How the Game Works}{♟️ How the Game Works}}\label{md_README_autotoc_md9}
+This is a two-\/player command-\/line chess game. Players take turns entering moves using standard chess notation (e.\+g., {\ttfamily e2e4}). The game enforces the official rules of chess, including valid movement for each piece, alternating turns, and special moves. The game ends when a player resigns, a draw is declared, or a checkmate or stalemate occurs.\hypertarget{md_README_autotoc_md10}{}\doxysubsection{\texorpdfstring{Key Rules Implemented}{Key Rules Implemented}}\label{md_README_autotoc_md10}
+
+\begin{DoxyItemize}
+\item {\bfseries{Checkmate}}\+: Occurs when a player is in check and has no legal moves to escape. The game ends, and the opponent wins.
+\item {\bfseries{Stalemate}}\+: Happens when a player is {\bfseries{not in check}} but has {\bfseries{no legal moves}} left. This results in a draw.
+\item {\bfseries{En Passant}}\+: A special pawn capture that can occur if a pawn moves two squares forward from its starting position and lands beside an opponent\textquotesingle{}s pawn. On the next turn only, the opponent can capture it as if it had moved one square forward.
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md11}{}\doxysection{\texorpdfstring{✅ Unit Tests}{✅ Unit Tests}}\label{md_README_autotoc_md11}
+All unit tests were executed using test-\/level.\+sh, and all tests passed successfully.
+
+No failing tests to report\hypertarget{md_README_autotoc_md12}{}\doxysection{\texorpdfstring{📄 Additional Notes}{📄 Additional Notes}}\label{md_README_autotoc_md12}
+The program was tested and developed on Arch Linux using g++ and make. 
