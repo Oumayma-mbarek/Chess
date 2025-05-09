@@ -33,6 +33,12 @@ public:
     Board(); 
 
     /**
+     * @brief destructor of a Board
+     */
+    ~Board();
+    
+
+    /**
      * @brief displays the board with the pieces as emojis
      */
     void display() const ;

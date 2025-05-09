@@ -1,7 +1,7 @@
 TARGET=echecs
 
 CXX=g++
-CXXFLAGS=-Wall -g -fanalyzer -Wextra -Werror -std=c++11 -Wshadow -O2 -Wno-analyzer-use-of-uninitialized-value
+CXXFLAGS=-Wall -g -Wextra -Werror -std=c++11 -Wshadow -O2 -Wno-analyzer-use-of-uninitialized-value
 
 
 DOXYGEN=doxygen

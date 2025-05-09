@@ -65,7 +65,18 @@ Board::Board ()
 
 
 
+Board::~Board() {
+    for (int i(0); i < 8; i++) {
+        for (int j(0); j < 8; j++) {
+            if (board[i][j] != nullptr) {
+                delete board[i][j]; // Delete each piece.
+            }
+        }
+        //delete[] board[i];
+    }
+    //delete[] board;
 
+}
 //--------------------------------------------------------------
 //--------------------------------------------------------------
 
@@ -513,8 +524,8 @@ bool Board::deplace(Spot orig, Spot dest,Couleur turn,bool actualmove, bool chec
                 cout << "En passant !" << endl;
                 cout << "Piece captured: " << board[dest.get_row()-1][dest.get_col()]->get_symbole() << endl;
                 nocapture = 0;
-                board[dest.get_row()-1][dest.get_col()] = nullptr;
-                
+                //board[dest.get_row()-1][dest.get_col()] = nullptr;
+                pieces[0].erase(pieces[0].begin()+board[dest.get_row()-1][dest.get_col()]->get_id());
             }
         }
         if(turn == Black && enpassantw[dest.get_col()] == 1 && dest.get_row() == 2){
@@ -522,7 +533,8 @@ bool Board::deplace(Spot orig, Spot dest,Couleur turn,bool actualmove, bool chec
                 cout << "En passant !" << endl;
                 cout << "Piece captured: " << board[dest.get_row()+1][dest.get_col()]->get_symbole() << endl;
                 nocapture = 0;
-                board[dest.get_row()+1][dest.get_col()] = nullptr;
+                //board[dest.get_row()+1][dest.get_col()] = nullptr;
+                pieces[1].erase(pieces[1].begin()+board[dest.get_row()+1][dest.get_col()]->get_id());
                 
             }
         }
@@ -594,7 +606,8 @@ bool Board::deplace(Spot orig, Spot dest,Couleur turn,bool actualmove, bool chec
         }
         if( p_dest != nullptr){
             //gerer le fait de manger la piece 
-            p_dest = nullptr;
+            //p_dest = nullptr;
+            pieces[!turn].erase(pieces[!turn].begin()+p_dest->get_id());
             nocapture=0;
         }
         else{

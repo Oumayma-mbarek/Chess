@@ -32,6 +32,10 @@ class Piece{
         Piece(Couleur C,string sym, int i ,Spot s,bool firstmove=true);
 
         /**
+         * @brief destructor of piece
+         */
+        virtual ~Piece();
+        /**
          * @brief setter of the postion of a piece
          * 
          * @param s the new position of the piece
@@ -112,6 +116,7 @@ class King : public Piece {
          */
         King(Couleur c,string sym,int i, Spot s);
 
+        ~King();
         /**
          * @brief check if a move from origin spot to destination spot is legal
          * @param orig the origin square where the king currently is
@@ -135,7 +140,7 @@ class Queen : public Piece {
          * @param s the current position of the Queen 
          */
         Queen(Couleur c,string sym,int i, Spot s);
-
+        ~Queen();
         /**
          * @brief check if a move from origin spot to destination spot is legal
          * @param orig the origing square where the queen currently is
@@ -159,7 +164,7 @@ class Pawn : public Piece {
          * @param s current position of the pawn 
          */
         Pawn (Couleur c,string sym,int i, Spot s);
-
+        ~Pawn();
         /**
          * @brief check if a move from origin spot to destination spot is legal
          * @param orig the origin spot where the pawn currently is
@@ -183,7 +188,7 @@ class Knight : public Piece {
          * @param s current position of the knight
          */
         Knight(Couleur c,string sym,int i, Spot s);
-
+        ~Knight();
         /**
          * @brief checks if a knight move from origin spot to destination spot is legal
          * @param orig origin spot where the knight currently is 
@@ -207,7 +212,7 @@ class Bishop : public Piece {
          * @param s current spot of the bishop
         */
         Bishop (Couleur c,string sym,int i, Spot s);
-
+        ~Bishop();
         /**
          * @brief checks if the bishop move from orig to dest is legal
          * @param orig origin spot where the bishop currently is 
@@ -231,7 +236,7 @@ class Rook : public Piece {
          * @param s current position of the rook
          */
         Rook(Couleur c,string sym,int i, Spot s);
-
+        ~Rook();
         /**
          * @brief check if the rook can go from orig to dest
          * @param orig origin spot where the rook currently is

@@ -24,74 +24,76 @@
 \DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{public}:\ }
 \DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPiece_a7982583185b2cf6aaa0dfd971cffcfe0}{Piece}}(Couleur\ C,\textcolor{keywordtype}{string}\ sym,\ \textcolor{keywordtype}{int}\ i\ ,\mbox{\hyperlink{classSpot}{Spot}}\ s,\textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classPiece_aa3bc2f47d8d6f6e56d51f79428106d12}{firstmove}}=\textcolor{keyword}{true});}
 \DoxyCodeLine{00033\ }
-\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPiece_a766a288f5fad58014b77e0c9291ed3b0}{set\_pos}}(\mbox{\hyperlink{classSpot}{Spot}}\ s);\ \textcolor{comment}{//permet\ de\ changer\ la\ position\ d'une\ piece(\ aucune\ influence\ sur\ le\ board)\ }}
-\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSpot}{Spot}}\ \mbox{\hyperlink{classPiece_a55b9482385326c0da200b43a20fb210e}{get\_pos}}();\ \textcolor{comment}{//renvoie\ la\ position\ d'une\ piece\ }}
-\DoxyCodeLine{00047\ }
-\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classPiece_a4be80209d697081020fc2c5e4bca1169}{get\_symbole}}()\textcolor{keyword}{const};}
-\DoxyCodeLine{00054\ }
-\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ Couleur\ \mbox{\hyperlink{classPiece_a207446d9c1a6750b413aae6935462507}{get\_color}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00061\ }
-\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPiece_a236697193d2add8d3872aa8b6813ce79}{get\_id}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00068\ }
-\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classPiece_a47678a20f4a8d60910331924e2550667}{get\_firstmove}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00075\ }
-\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPiece_adc13c4d935aefe214692a08cef8a65c0}{setFirstMove}}(\textcolor{keywordtype}{bool}\ t)\ ;}
-\DoxyCodeLine{00082\ }
-\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classPiece_af8c4854ff84aae9f81f8653eaaece3ce}{possible\_move}}(\mbox{\hyperlink{classSpot}{Spot}}\ orig,\ \mbox{\hyperlink{classSpot}{Spot}}\ dest)=0\ \ ;\textcolor{comment}{//\ true\ si\ le\ deplacement\ est\ valide\ }}
-\DoxyCodeLine{00093\ }
-\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPiece_a015eeebd12773b9b6ffda27d393f7a26}{display}}();}
-\DoxyCodeLine{00098\ \};}
-\DoxyCodeLine{00099\ }
-\DoxyCodeLine{00103\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classKing_ac7a090212f2f806f8bb4d56d5a3155e2}{King}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classPiece_a7982583185b2cf6aaa0dfd971cffcfe0}{Piece}}\ \{}
-\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keyword}{public}:\ }
-\DoxyCodeLine{00105\ }
-\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classKing_ac7a090212f2f806f8bb4d56d5a3155e2}{King}}(Couleur\ c,\textcolor{keywordtype}{string}\ sym,\textcolor{keywordtype}{int}\ i,\ \mbox{\hyperlink{classSpot}{Spot}}\ s);}
-\DoxyCodeLine{00114\ }
-\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classKing_ad90b0a627adf8884c8a7d84c397d2cbf}{possible\_move}}(\mbox{\hyperlink{classSpot}{Spot}}\ orig,\ \mbox{\hyperlink{classSpot}{Spot}}\ dest)\ \ \textcolor{keyword}{override};\ }
-\DoxyCodeLine{00122\ \};}
-\DoxyCodeLine{00123\ }
-\DoxyCodeLine{00127\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classQueen_a5285f15d01efc3919ba3b0226f957bc1}{Queen}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classPiece_a7982583185b2cf6aaa0dfd971cffcfe0}{Piece}}\ \{}
-\DoxyCodeLine{00128\ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00129\ }
-\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classQueen_a5285f15d01efc3919ba3b0226f957bc1}{Queen}}(Couleur\ c,\textcolor{keywordtype}{string}\ sym,\textcolor{keywordtype}{int}\ i,\ \mbox{\hyperlink{classSpot}{Spot}}\ s);}
-\DoxyCodeLine{00138\ }
-\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classQueen_ab0054cb38da0f6d38a178329c10700a0}{possible\_move}}(\mbox{\hyperlink{classSpot}{Spot}}\ orig,\ \mbox{\hyperlink{classSpot}{Spot}}\ dest)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00146\ \};}
-\DoxyCodeLine{00147\ }
-\DoxyCodeLine{00151\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classPawn_ae53120505047a089094f09e4043b4926}{Pawn}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classPiece_a7982583185b2cf6aaa0dfd971cffcfe0}{Piece}}\ \{}
-\DoxyCodeLine{00152\ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00153\ }
-\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPawn_ae53120505047a089094f09e4043b4926}{Pawn}}\ (Couleur\ c,\textcolor{keywordtype}{string}\ sym,\textcolor{keywordtype}{int}\ i,\ \mbox{\hyperlink{classSpot}{Spot}}\ s);}
-\DoxyCodeLine{00162\ }
-\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classPawn_a64b26e13f3f54841bf98c6d1ed5751aa}{possible\_move}}(\mbox{\hyperlink{classSpot}{Spot}}\ orig,\ \mbox{\hyperlink{classSpot}{Spot}}\ dest)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00170\ \};}
-\DoxyCodeLine{00171\ }
-\DoxyCodeLine{00175\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classKnight_abd848d2b7e14d9fb3007e9c7269efc21}{Knight}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classPiece_a7982583185b2cf6aaa0dfd971cffcfe0}{Piece}}\ \{}
-\DoxyCodeLine{00176\ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00177\ }
-\DoxyCodeLine{00185\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classKnight_abd848d2b7e14d9fb3007e9c7269efc21}{Knight}}(Couleur\ c,\textcolor{keywordtype}{string}\ sym,\textcolor{keywordtype}{int}\ i,\ \mbox{\hyperlink{classSpot}{Spot}}\ s);}
-\DoxyCodeLine{00186\ }
-\DoxyCodeLine{00193\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classKnight_add4969d705871afa4e27e9ec5a196bd4}{possible\_move}}(\mbox{\hyperlink{classSpot}{Spot}}\ orig,\ \mbox{\hyperlink{classSpot}{Spot}}\ dest\ )\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00194\ \};}
-\DoxyCodeLine{00195\ }
-\DoxyCodeLine{00199\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classBishop_ac962e8e082e68eaa8a6bdc752de14983}{Bishop}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classPiece_a7982583185b2cf6aaa0dfd971cffcfe0}{Piece}}\ \{}
-\DoxyCodeLine{00200\ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00201\ }
-\DoxyCodeLine{00209\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classBishop_ac962e8e082e68eaa8a6bdc752de14983}{Bishop}}\ (Couleur\ c,\textcolor{keywordtype}{string}\ sym,\textcolor{keywordtype}{int}\ i,\ \mbox{\hyperlink{classSpot}{Spot}}\ s);}
-\DoxyCodeLine{00210\ }
-\DoxyCodeLine{00217\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classBishop_a48262cd80ef6a047a4c5330301868d94}{possible\_move}}(\mbox{\hyperlink{classSpot}{Spot}}\ orig,\ \mbox{\hyperlink{classSpot}{Spot}}\ dest)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00218\ \};}
-\DoxyCodeLine{00219\ }
-\DoxyCodeLine{00223\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classRook_a180f0e081467cb6e00c5b60368652886}{Rook}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classPiece_a7982583185b2cf6aaa0dfd971cffcfe0}{Piece}}\ \{}
-\DoxyCodeLine{00224\ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00225\ }
-\DoxyCodeLine{00233\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classRook_a180f0e081467cb6e00c5b60368652886}{Rook}}(Couleur\ c,\textcolor{keywordtype}{string}\ sym,\textcolor{keywordtype}{int}\ i,\ \mbox{\hyperlink{classSpot}{Spot}}\ s);}
-\DoxyCodeLine{00234\ }
-\DoxyCodeLine{00241\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classRook_acb70b24ff1bf3e886ef98410b1d749bc}{possible\_move}}(\mbox{\hyperlink{classSpot}{Spot}}\ orig,\mbox{\hyperlink{classSpot}{Spot}}\ dest\ )\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00242\ \};}
-\DoxyCodeLine{00243\ }
-\DoxyCodeLine{00244\ }
-\DoxyCodeLine{00245\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PIECE\_HPP}}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classPiece_a5d7a4f6bade94cb33b6f634de8aa7918}{\string~Piece}}();}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPiece_a766a288f5fad58014b77e0c9291ed3b0}{set\_pos}}(\mbox{\hyperlink{classSpot}{Spot}}\ s);\ \textcolor{comment}{//permet\ de\ changer\ la\ position\ d'une\ piece(\ aucune\ influence\ sur\ le\ board)\ }}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSpot}{Spot}}\ \mbox{\hyperlink{classPiece_a55b9482385326c0da200b43a20fb210e}{get\_pos}}();\ \textcolor{comment}{//renvoie\ la\ position\ d'une\ piece\ }}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classPiece_a4be80209d697081020fc2c5e4bca1169}{get\_symbole}}()\textcolor{keyword}{const};}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ Couleur\ \mbox{\hyperlink{classPiece_a207446d9c1a6750b413aae6935462507}{get\_color}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPiece_a236697193d2add8d3872aa8b6813ce79}{get\_id}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classPiece_a47678a20f4a8d60910331924e2550667}{get\_firstmove}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPiece_adc13c4d935aefe214692a08cef8a65c0}{setFirstMove}}(\textcolor{keywordtype}{bool}\ t)\ ;}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classPiece_af8c4854ff84aae9f81f8653eaaece3ce}{possible\_move}}(\mbox{\hyperlink{classSpot}{Spot}}\ orig,\ \mbox{\hyperlink{classSpot}{Spot}}\ dest)=0\ \ ;\textcolor{comment}{//\ true\ si\ le\ deplacement\ est\ valide\ }}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPiece_a015eeebd12773b9b6ffda27d393f7a26}{display}}();}
+\DoxyCodeLine{00102\ \};}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00107\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classKing_ac7a090212f2f806f8bb4d56d5a3155e2}{King}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classPiece_a7982583185b2cf6aaa0dfd971cffcfe0}{Piece}}\ \{}
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keyword}{public}:\ }
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classKing_ac7a090212f2f806f8bb4d56d5a3155e2}{King}}(Couleur\ c,\textcolor{keywordtype}{string}\ sym,\textcolor{keywordtype}{int}\ i,\ \mbox{\hyperlink{classSpot}{Spot}}\ s);}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classKing_ac7a090212f2f806f8bb4d56d5a3155e2}{\string~King}}();}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classKing_ad90b0a627adf8884c8a7d84c397d2cbf}{possible\_move}}(\mbox{\hyperlink{classSpot}{Spot}}\ orig,\ \mbox{\hyperlink{classSpot}{Spot}}\ dest)\ \ \textcolor{keyword}{override};\ }
+\DoxyCodeLine{00127\ \};}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00132\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classQueen_a5285f15d01efc3919ba3b0226f957bc1}{Queen}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classPiece_a7982583185b2cf6aaa0dfd971cffcfe0}{Piece}}\ \{}
+\DoxyCodeLine{00133\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classQueen_a5285f15d01efc3919ba3b0226f957bc1}{Queen}}(Couleur\ c,\textcolor{keywordtype}{string}\ sym,\textcolor{keywordtype}{int}\ i,\ \mbox{\hyperlink{classSpot}{Spot}}\ s);}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classQueen_a5285f15d01efc3919ba3b0226f957bc1}{\string~Queen}}();}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classQueen_ab0054cb38da0f6d38a178329c10700a0}{possible\_move}}(\mbox{\hyperlink{classSpot}{Spot}}\ orig,\ \mbox{\hyperlink{classSpot}{Spot}}\ dest)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00151\ \};}
+\DoxyCodeLine{00152\ }
+\DoxyCodeLine{00156\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classPawn_ae53120505047a089094f09e4043b4926}{Pawn}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classPiece_a7982583185b2cf6aaa0dfd971cffcfe0}{Piece}}\ \{}
+\DoxyCodeLine{00157\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00158\ }
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPawn_ae53120505047a089094f09e4043b4926}{Pawn}}\ (Couleur\ c,\textcolor{keywordtype}{string}\ sym,\textcolor{keywordtype}{int}\ i,\ \mbox{\hyperlink{classSpot}{Spot}}\ s);}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPawn_ae53120505047a089094f09e4043b4926}{\string~Pawn}}();}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classPawn_a64b26e13f3f54841bf98c6d1ed5751aa}{possible\_move}}(\mbox{\hyperlink{classSpot}{Spot}}\ orig,\ \mbox{\hyperlink{classSpot}{Spot}}\ dest)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00175\ \};}
+\DoxyCodeLine{00176\ }
+\DoxyCodeLine{00180\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classKnight_abd848d2b7e14d9fb3007e9c7269efc21}{Knight}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classPiece_a7982583185b2cf6aaa0dfd971cffcfe0}{Piece}}\ \{}
+\DoxyCodeLine{00181\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00182\ }
+\DoxyCodeLine{00190\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classKnight_abd848d2b7e14d9fb3007e9c7269efc21}{Knight}}(Couleur\ c,\textcolor{keywordtype}{string}\ sym,\textcolor{keywordtype}{int}\ i,\ \mbox{\hyperlink{classSpot}{Spot}}\ s);}
+\DoxyCodeLine{00191\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classKnight_abd848d2b7e14d9fb3007e9c7269efc21}{\string~Knight}}();}
+\DoxyCodeLine{00198\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classKnight_add4969d705871afa4e27e9ec5a196bd4}{possible\_move}}(\mbox{\hyperlink{classSpot}{Spot}}\ orig,\ \mbox{\hyperlink{classSpot}{Spot}}\ dest\ )\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00199\ \};}
+\DoxyCodeLine{00200\ }
+\DoxyCodeLine{00204\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classBishop_ac962e8e082e68eaa8a6bdc752de14983}{Bishop}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classPiece_a7982583185b2cf6aaa0dfd971cffcfe0}{Piece}}\ \{}
+\DoxyCodeLine{00205\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00206\ }
+\DoxyCodeLine{00214\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classBishop_ac962e8e082e68eaa8a6bdc752de14983}{Bishop}}\ (Couleur\ c,\textcolor{keywordtype}{string}\ sym,\textcolor{keywordtype}{int}\ i,\ \mbox{\hyperlink{classSpot}{Spot}}\ s);}
+\DoxyCodeLine{00215\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classBishop_ac962e8e082e68eaa8a6bdc752de14983}{\string~Bishop}}();}
+\DoxyCodeLine{00222\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classBishop_a48262cd80ef6a047a4c5330301868d94}{possible\_move}}(\mbox{\hyperlink{classSpot}{Spot}}\ orig,\ \mbox{\hyperlink{classSpot}{Spot}}\ dest)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00223\ \};}
+\DoxyCodeLine{00224\ }
+\DoxyCodeLine{00228\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classRook_a180f0e081467cb6e00c5b60368652886}{Rook}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classPiece_a7982583185b2cf6aaa0dfd971cffcfe0}{Piece}}\ \{}
+\DoxyCodeLine{00229\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00230\ }
+\DoxyCodeLine{00238\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classRook_a180f0e081467cb6e00c5b60368652886}{Rook}}(Couleur\ c,\textcolor{keywordtype}{string}\ sym,\textcolor{keywordtype}{int}\ i,\ \mbox{\hyperlink{classSpot}{Spot}}\ s);}
+\DoxyCodeLine{00239\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classRook_a180f0e081467cb6e00c5b60368652886}{\string~Rook}}();}
+\DoxyCodeLine{00246\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classRook_acb70b24ff1bf3e886ef98410b1d749bc}{possible\_move}}(\mbox{\hyperlink{classSpot}{Spot}}\ orig,\mbox{\hyperlink{classSpot}{Spot}}\ dest\ )\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00247\ \};}
+\DoxyCodeLine{00248\ }
+\DoxyCodeLine{00249\ }
+\DoxyCodeLine{00250\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PIECE\_HPP}}
 
 \end{DoxyCode}

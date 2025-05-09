@@ -1,6 +1,7 @@
 var classBoard =
 [
     [ "Board", "classBoard.html#a9ee491d4fea680cf69b033374a9fdfcb", null ],
+    [ "~Board", "classBoard.html#af73f45730119a1fd8f6670f53f959e68", null ],
     [ "askwhichpiecewanted", "classBoard.html#a5864caa098aadd7d7dbb53737ebbcf2a", null ],
     [ "big_castle", "classBoard.html#ac1e0d9617bed7946da981e5a2a77d309", null ],
     [ "canonicallyprintboard", "classBoard.html#a530de4e57dc2a3f3ad7315030a36cc90", null ],

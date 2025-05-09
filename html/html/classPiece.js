@@ -1,6 +1,7 @@
 var classPiece =
 [
     [ "Piece", "classPiece.html#a7982583185b2cf6aaa0dfd971cffcfe0", null ],
+    [ "~Piece", "classPiece.html#a5d7a4f6bade94cb33b6f634de8aa7918", null ],
     [ "display", "classPiece.html#a015eeebd12773b9b6ffda27d393f7a26", null ],
     [ "get_color", "classPiece.html#a207446d9c1a6750b413aae6935462507", null ],
     [ "get_firstmove", "classPiece.html#a47678a20f4a8d60910331924e2550667", null ],
