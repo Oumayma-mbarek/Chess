@@ -457,7 +457,7 @@ bool Board::deplace(Spot orig, Spot dest,Couleur turn,bool actualmove, bool chec
     if(actualmove) cout << "player is moving his own piece" << endl;
     //make sure that the move is possible 
     if(p_orig->possible_move(orig,dest) == false){
-        if(actualmove) cout << "Invalid move board deplace possible_move 5ra piece  " << endl;
+        if(actualmove) cout << "Invalid move" << endl;
         return false;
     }
 
@@ -514,7 +514,7 @@ bool Board::deplace(Spot orig, Spot dest,Couleur turn,bool actualmove, bool chec
                 cout << "Piece captured: " << board[dest.get_row()-1][dest.get_col()]->get_symbole() << endl;
                 nocapture = 0;
                 board[dest.get_row()-1][dest.get_col()] = nullptr;
-                cout << "piece caputred en passant" << endl;
+                
             }
         }
         if(turn == Black && enpassantw[dest.get_col()] == 1 && dest.get_row() == 2){
@@ -523,7 +523,7 @@ bool Board::deplace(Spot orig, Spot dest,Couleur turn,bool actualmove, bool chec
                 cout << "Piece captured: " << board[dest.get_row()+1][dest.get_col()]->get_symbole() << endl;
                 nocapture = 0;
                 board[dest.get_row()+1][dest.get_col()] = nullptr;
-                cout << "piece caputred en passant" << endl;
+                
             }
         }
     }
@@ -602,10 +602,7 @@ bool Board::deplace(Spot orig, Spot dest,Couleur turn,bool actualmove, bool chec
         }
         
         board[dest.get_row()][dest.get_col()]= p_orig;
-        cout << "etape 4"<< endl;
         board[orig.get_row()][orig.get_col()]=nullptr;
-        cout << "etape5" << endl;
-        cout << "Piece moved from " << orig.to_string() << " to " << dest.to_string() << endl;
     }
     // enpassant arrays update
     if(actualmove){
