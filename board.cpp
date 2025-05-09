@@ -76,6 +76,12 @@ void Board::pose_piece(Piece* p, Spot s){
     p->get_pos().set_row(row);
 }
 
+int Board::getnocapture() const {
+    return nocapture;
+}
+void Board::setnocapture(int nc) {
+    this->nocapture = nc;
+}
 
 //--------------------------------------------------------------
 //--------------------------------------------------------------
@@ -151,8 +157,43 @@ char Board::askwhichpiecewanted() {
 //--------------------------------------------------------------
 
 
+bool Board::checkmate(Couleur turn){
+    // Iterate over all the pieces of the player and check if a move is possible
+    for (int i = 0; i < 8; i++){
+        for (int j = 0; j < 8; j++){
+            if (board[i][j] != nullptr && board[i][j]->get_color() == turn){
+                for (int k = 0; k < 8; k++){
+                    for (int l = 0; l < 8; l++){
+                        if (deplace(Spot(i, j), Spot(k, l), turn, false)){
+                            return false;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    return true;
+}
 
 
+
+
+//--------------------------------------------------------------
+//--------------------------------------------------------------
+bool Board::stalemate(Couleur turn) {
+    // If no move possible and not in check : pat
+    if(!incheck(turn) && checkmate(turn)){
+        return true;
+    }
+    // If no moves possible for both players : pat
+    if(checkmate(turn) && checkmate((turn == White ? Black : White))){
+        return true;
+    }
+    return false;
+}
+
+//--------------------------------------------------------------
+//--------------------------------------------------------------
 
 bool Board::deplace(Spot orig, Spot dest,Couleur turn,bool actualmove, bool checktest){
 
@@ -205,30 +246,94 @@ bool Board::deplace(Spot orig, Spot dest,Couleur turn,bool actualmove, bool chec
     if(actualmove) cout << "Pawn is not capturing a piece in front of it "<< endl;
 
     //make sure that pawn moves diagonally only to caputre another piece 
-    if((p_orig->get_symbole()== "\u2659" || p_orig->get_symbole()=="\u265F" )    && p_dest == nullptr){
+    if((p_orig->get_symbole()== "\u2659" || p_orig->get_symbole()=="\u265F" )    && p_dest == nullptr &&  !(turn == White ? enpassantb[dest.get_col()] == 1 && dest.get_row() == 5 : enpassantw[dest.get_col()] == 1 && dest.get_row() == 2)){
         if(p_orig->get_color()==White){
             //mouvement diagonal vers la droite
             if (dest.get_col()== orig.get_col()+1  &&  dest.get_row()==orig.get_row()+1 ){
+                if(actualmove) cout << "Pawns can only move diagonally to capture a piece" << endl;
                 return false;
             }
             //mouvement diagonal vers la gauche 
             else if(dest.get_col()== orig.get_col()-1  &&  dest.get_row()==orig.get_row()+1){
+                if(actualmove) cout << "Pawns can only move diagonally to capture a piece" << endl;
                 return false;
             }
         }
         if(p_orig->get_color()==Black){
             //mouvement diagonal vers la droite
             if (dest.get_col()== orig.get_col()-1  &&  dest.get_row()==orig.get_row()-1 ){
+                if(actualmove) cout << "Pawns can only move diagonally to capture a piece" << endl;
                 return false;
             }
             //mouvement diagonal vers la gauche 
             if(dest.get_col()== orig.get_col()+1  &&  dest.get_row()==orig.get_row()-1){
+                if(actualmove) cout << "Pawns can only move diagonally to capture a piece" << endl;
                 return false;
             }
         }
     }
+    //Check for en passant and delete the pawn that was captured 
+  
 
+   
+    if(p_orig->get_symbole()=="\u2659" && orig.get_col()!= dest.get_col() && board[dest.get_row()][dest.get_col()]== nullptr){
+        if(turn == White && enpassantb[dest.get_col()] == 1 && dest.get_row() == 5){
+            if(actualmove){
+                cout << "En passant !" << endl;
+                cout << "Piece captured: " << board[dest.get_row()-1][dest.get_col()]->get_symbole() << endl;
+                nocapture = 0;
+                board[dest.get_row()-1][dest.get_col()] = nullptr;
+                cout << "piece caputred en passant" << endl;
+            }
+        }
+        if(turn == Black && enpassantw[dest.get_col()] == 1 && dest.get_row() == 2){
+            if(actualmove){
+                cout << "En passant !" << endl;
+                cout << "Piece captured: " << board[dest.get_row()+1][dest.get_col()]->get_symbole() << endl;
+                nocapture = 0;
+                board[dest.get_row()+1][dest.get_col()] = nullptr;
+                cout << "piece caputred en passant" << endl;
+            }
+        }
+    }
 
+    //make sure that pawn transforms if it reaches the other side 
+    int i;
+    string s;
+    turn == White ? s= "\u2659" : s="\u265F";
+    turn== White ? i=7 : i=0;
+    if(p_orig->get_symbole()== s && dest.get_row()==i){
+        cout <<"Pawn has reached the other side" << endl;
+        char p = askwhichpiecewanted();
+        switch (p){
+            case 'Q':
+                p_orig->set_pos(dest);
+                board[orig.get_row()][orig.get_col()]=nullptr;
+                board[i][dest.get_col()] = new Queen(turn, turn==White? "\u2655" :"\u265B" ,37 ,dest);
+                p_orig=nullptr;
+                break;
+            case 'R':
+                p_orig->set_pos(dest);
+                board[orig.get_row()][orig.get_col()]=nullptr;
+                board[i][dest.get_col()] = new Rook(turn, turn==White? "\u2656": "\u265C",38,dest);
+                p_orig=nullptr;
+                break;
+            case 'B':
+                p_orig->set_pos(dest); 
+                board[orig.get_row()][orig.get_col()]=nullptr;   
+                board[i][dest.get_col()] = new Bishop(turn, turn==White?  "\u2657": "\u265D",39,dest);
+                p_orig=nullptr;
+                break;
+            case 'N':
+                p_orig->set_pos(dest);
+                board[orig.get_row()][orig.get_col()]=nullptr;
+                board[i][dest.get_col()] = new Knight(turn,  turn==White? "\u2658": "\u265E",40,dest);
+                p_orig=nullptr;
+                break;
+        
+        }
+        return true;
+    }
 
 
     //check the path is clear 
@@ -247,12 +352,22 @@ bool Board::deplace(Spot orig, Spot dest,Couleur turn,bool actualmove, bool chec
     }
 
 
+
     //place p_orig at dest  
     if(actualmove){
         p_orig->set_pos(dest);
+        //if the moved piece is a pawn, a rook, or the king, set firstmove to false
+        if ((p_orig->get_symbole() == "\u2659" || p_orig->get_symbole() == "\u265F" || p_orig->get_symbole() == "\u265C" || p_orig->get_symbole() == "\u2656" || p_orig->get_symbole() == "\u265A" ||  p_orig->get_symbole() == "\u2654")){
+            p_orig->setFirstMove(false);
+            cout << "first move is set to false" << endl;
+        }
         if( p_dest != nullptr){
             //gerer le fait de manger la piece 
             p_dest = nullptr;
+            nocapture=0;
+        }
+        else{
+            nocapture ++;
         }
         
         board[dest.get_row()][dest.get_col()]= p_orig;
@@ -260,15 +375,23 @@ bool Board::deplace(Spot orig, Spot dest,Couleur turn,bool actualmove, bool chec
         board[orig.get_row()][orig.get_col()]=nullptr;
         cout << "etape5" << endl;
         cout << "Piece moved from " << orig.to_string() << " to " << dest.to_string() << endl;
-          
-        //if the moved piece is a pawn, a rook, or the king, set firstmove to false
-        if ((p_orig->get_symbole() == "\u2659" || p_orig->get_symbole() == "\u265F" || p_orig->get_symbole() == "\u265C" || p_orig->get_symbole() == "\u2656" || p_orig->get_symbole() == "\u265A" ||  p_orig->get_symbole() == "\u2654")){
-            p_orig->setFirstMove(false);
-            cout << "first move is set to false" << endl;
+    }
+    // enpassant arrays update
+    if(actualmove){
+        for (int k = 0; k< 8; k++){
+            enpassantw[k] = 0;
+            enpassantb[k] = 0;
         }
     }
 
-
+    // put 1 in the corresponding enpassant array if the pawn moved 2 squares forward
+    if (p_orig->get_symbole() == "\u2659" && abs(orig.get_row() - dest.get_row()) == 2 && actualmove){
+        enpassantw[orig.get_col()] = 1;
+    }
+    if (p_orig->get_symbole() == "\u265F" && abs(orig.get_row() - dest.get_row()) == 2 && actualmove){
+        enpassantb[orig.get_col()] = 1;
+    }
+    
     return true;
     
 }
@@ -419,17 +542,47 @@ void Board::canonicallyprintboard(string score){
 //--------------------------------------------------------------
 //--------------------------------------------------------------
 
+bool Board::little_castle(Couleur turn){
+    int i;
+    turn == White ? i = 0 : i = 7;
+    string sk;
+    string sr;
+    turn==White ? sk="\u2654" : sk="\u265A";
+    turn==White ? sr="\u2656" : sr="\u265C";
 
-bool Board::isBishopMoveBlocked(Spot orig,Spot dest) {
-    // assume we have already done the tests above
-    int dirX = dest.get_row() > orig.get_row() ? 1 : -1;
-    int dirY = dest.get_col() > orig.get_col() ? 1 : -1;
-    for (int i=1; i < abs(dest.get_row() - orig.get_row()) - 1; ++i) {
-        if (board[orig.get_row() + i*dirX][ orig.get_col() + i*dirY] !=nullptr)
-        {
-            return false;
-        }
+
+    if( board[i][4]== nullptr || board[i][7]== nullptr || board[i][4]->get_symbole()!=sk || board[i][7]->get_symbole()!=sr || board[i][4]->get_firstmove()==false || board[i][7]->get_firstmove()==false){
+        cout << "impossible little castle" << endl;
+        return false;
     }
+    if(board[i][5]!=nullptr || board[i][6]!=nullptr ) {
+        cout << "path is not clear for little castle" << endl;
+        return false;
+    }
+    if(incheck(turn)){
+        cout << "little castle in check" << endl;
+        return false;
+    }
+
+    Piece* p_king=board[i][4];
+    Piece* p_right_rook=board[i][7];
+     //Perform the move
+    board[i][6] = board[i][4];
+    board[i][4] = nullptr;
+    board[i][5] = board[i][7];
+    board[i][7] = nullptr;
+ 
+     // Check if the player is in check in that new position
+    if(incheck(turn)){
+        // Player is in check, undo the move
+        board[i][4] = p_king;
+        board[i][7] = p_right_rook;
+        board[i][6] = nullptr;
+        board[i][5] = nullptr;
+        return false;
+    }
+ 
+    cout << " little Castle !" << endl;
     return true;
 }
 
@@ -437,35 +590,51 @@ bool Board::isBishopMoveBlocked(Spot orig,Spot dest) {
 //--------------------------------------------------------------
 //--------------------------------------------------------------
 
+bool Board::big_castle(Couleur turn){
+    int i;
+    turn == White ? i = 0 : i = 7;
+    string sk;
+    string sr;
+    turn==White ? sk="\u2654" : sk="\u265A";
+    turn==White ? sr="\u2656" : sr="\u265C";
 
-bool Board::isRookMoveBlocked(Spot orig, Spot dest){
-    //if horizontal move
-    if(dest.get_row()==dest.get_row()){
-        int signe= dest.get_col()-orig.get_col()/abs( dest.get_col()-orig.get_col());
-        int i=orig.get_col();
-        while (board[i][dest.get_row()]==nullptr || i==dest.get_col()){
-            i=i+ signe*1;                           
-        }
-        if (i!=dest.get_col()+1 && i!=dest.get_col()-1) return true;
-        
+
+    if( board[i][4]== nullptr || board[i][7]== nullptr || board[i][4]->get_symbole()!=sk || board[i][7]->get_symbole()!=sr || board[i][4]->get_firstmove()==false || board[i][7]->get_firstmove()==false){
+        cout << "impossible big castle" << endl;
+        return false;
+    }
+    if(board[i][1]!=nullptr || board[i][2]!=nullptr || board[i][3]!=nullptr ){
+        cout << "path is not clear for big castle" << endl;
+        return false;
+    }
+    if(incheck(turn)){
+        cout << "big castle in check" << endl;
+        return false;
     }
 
-    //if vertical move
-    if(dest.get_col()==dest.get_col()){
-        int signe= dest.get_row()-orig.get_row()/abs( dest.get_row()-orig.get_row());
-        int i=orig.get_row();
-        while (board[dest.get_col()][i]==nullptr || i==dest.get_row()){
-            i=i+ signe*1;                           
-        }
-        if (i!=dest.get_row()+1 && i!=dest.get_row()-1) return true;
-        
+    Piece* p_king=board[i][4];
+    Piece* p_left_rook=board[i][0];
+    //Perform the move
+    board[i][2] = board[i][4];
+    board[i][4] = nullptr;
+    board[i][3] = board[i][0];
+    board[i][0] = nullptr;
+
+    //Check if the player is in check
+    if(incheck(turn)){
+        //Player is in check, undo the move
+        board[i][4] = p_king;
+        board[i][0] = p_left_rook;
+        board[i][2] = nullptr;
+        board[i][3] = nullptr;
+        return false;
     }
 
-    return false;
+    cout << "Big Castle !" << endl;
 
+    return true;
 }
 
-bool Board::isQueenMoveBlocked(Spot orig, Spot dest){
-    if(isRookMoveBlocked(orig,dest) || isBishopMoveBlocked(orig,dest)) return true;
-    return false;
-}
+//--------------------------------------------------------------
+//--------------------------------------------------------------
+
