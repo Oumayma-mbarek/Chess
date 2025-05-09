@@ -8,9 +8,6 @@
 using namespace std;
 
 Spot::Spot( int row,int col): x(row), y(col) {}
-Spot::~Spot() {}
-
-
 
 
 bool Spot::operator==(const Spot& other) const{
@@ -30,12 +27,9 @@ void Spot::set_row(int row){
     return;
 }
 
-
 string Spot::to_string()  {
     return string(1, y + '1') + string(1, x + 'a') ;
 }
-
-
 
 bool Spot::validspot() const {
     return x >= 0 && x <= 7 && y >= 0 && y <= 7;

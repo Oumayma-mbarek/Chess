@@ -19,9 +19,7 @@ using namespace std;
 // constructeur
 Board::Board () 
 {
-   // allocation des pieces                  
-   // Constructeur (Couleur, nom_affiché, id, case)
-   //pieces[White] et pieces[Black] sont deux vectuers (piece[2]) 
+ 
     for (int row =0; row<8;row++){
         for(int col=0;col<8;col++){
             board[row][col]= nullptr; 
@@ -66,22 +64,7 @@ Board::Board ()
 }
 
 
-//--------------------------------------------------------------
-//--------------------------------------------------------------
 
-void Board::pose_piece(Piece* p, Spot s){
-    int col=s.get_col();
-    int row=s.get_row();
-    p->get_pos().set_col(col);
-    p->get_pos().set_row(row);
-}
-
-int Board::getnocapture() const {
-    return nocapture;
-}
-void Board::setnocapture(int nc) {
-    this->nocapture = nc;
-}
 
 //--------------------------------------------------------------
 //--------------------------------------------------------------
@@ -111,7 +94,42 @@ void Board::display () const {
 }
 
 
+//--------------------------------------------------------------
+//--------------------------------------------------------------
 
+void Board::canonicallyprintboard(string score){
+    string boardstring = "";
+    // Canonical names for the pieces
+    string canonicalnameswhites[6] = {"wR", "wN", "wB", "wQ", "wK", "wP"};
+    string canonicalnamesblacks[6] = {"bR", "bN", "bB", "bQ", "bK", "bP"};
+    // Unicode names for the pieces
+    string whitenames[6] = {"\u2656", "\u2658", "\u2657", "\u2655", "\u2654", "\u2659"};
+    string blacknames[6] = {"\u265C", "\u265E", "\u265D", "\u265B", "\u265A", "\u265F"};
+    // Iterate over the board and add the pieces to the string
+    for (int i = 0; i < 8; i++){
+        for (int j = 0; j < 8; j++){
+            if (board[i][j] == nullptr){
+                boardstring += ",";
+            }
+            else{
+                for (int k = 0; k < 6; k++){
+                    if (board[i][j]->get_symbole() == whitenames[k]){
+                        boardstring += canonicalnameswhites[k];
+                    }
+                    if (board[i][j]->get_symbole() == blacknames[k]){
+                        boardstring += canonicalnamesblacks[k];
+                    }
+                }
+                boardstring += ",";
+            }
+        }
+    }
+    boardstring += " ";
+    // Add the score to the string
+    boardstring += score;
+    cout << boardstring << endl;
+
+}
 
 //--------------------------------------------------------------
 //--------------------------------------------------------------
@@ -130,6 +148,27 @@ bool Board::is_empty(Spot s){
 
 Piece* Board::get_piece(int row,int col){
     return board[row][col];
+}
+//--------------------------------------------------------------
+//--------------------------------------------------------------
+
+void Board::pose_piece(Piece* p, Spot s){
+    int col=s.get_col();
+    int row=s.get_row();
+    p->get_pos().set_col(col);
+    p->get_pos().set_row(row);
+}
+//--------------------------------------------------------------
+//--------------------------------------------------------------
+
+int Board::getnocapture() const {
+    return nocapture;
+}
+//--------------------------------------------------------------
+//--------------------------------------------------------------
+
+void Board::setnocapture(int nc) {
+    this->nocapture = nc;
 }
 
 //--------------------------------------------------------------
@@ -150,6 +189,198 @@ char Board::askwhichpiecewanted() {
     return piecewanted;
 }
 
+//--------------------------------------------------------------
+//--------------------------------------------------------------
+
+bool Board::pathisclear(Spot orig, Spot dest){
+    
+    
+    if (board[orig.get_row()][orig.get_col()]->get_symbole() != "\u265E" && board[orig.get_row()][orig.get_col()]->get_symbole() != "\u2658"){
+        int x = orig.get_row();
+        int y = orig.get_col();
+        while (x != dest.get_row() || y != dest.get_col()){
+            if (x < dest.get_row()){
+                x++;
+            }
+            if (x > dest.get_row()){
+                x--;
+            }
+            if (y < dest.get_col()){
+                y++;
+            }
+            if (y > dest.get_col()){
+                y--;
+            }
+            if ((x != dest.get_row() || y != dest.get_col()) && board[x][y] != nullptr){
+                return false;
+            }
+        }
+    }
+    return true;
+
+}
+
+//--------------------------------------------------------------
+//--------------------------------------------------------------
+
+bool Board::incheck(Couleur turn){
+    bool kingsposfound=false;
+    Spot king_pos(0,0);
+    //this iteration finds the position of the king 
+    for(int row=0;row<8;row++){
+        for(int col=0;col<8;col++){
+            if(board[row][col] != nullptr && board[row][col]->get_symbole() == (turn == White ? "\u2654" : "\u265A")){
+                king_pos.set_row(row);
+                king_pos.set_col(col);
+                kingsposfound=true;
+            }    
+        }
+    }
+
+    if (kingsposfound==false){
+        cout << "king not found" << endl;
+        return false;
+    }  
+    //Piece* King_p=board[king_pos.get_row()][king_pos.get_col()];
+    cout << "king position is"<< king_pos.get_row() << king_pos.get_col() << endl;
+    for(int row=0;row<8;row++){
+        for(int col=0;col<8;col++){
+            Piece* orig_p=board[row][col];
+            Spot orig= Spot(row,col);
+            if(orig_p != nullptr && orig_p->get_color()!= turn && orig_p->possible_move(orig,king_pos) && pathisclear(orig,king_pos)) {
+                cout << turn << "king in check by " << orig.get_row() << orig.get_col() << endl;
+                return true;
+            }
+        
+        }
+    }
+    cout << "not in check" << endl;
+    return false;
+}
+
+
+//--------------------------------------------------------------
+//--------------------------------------------------------------
+
+bool Board::willputincheck(Spot orig, Spot dest,Couleur turn){
+    Piece* p_orig= get_piece(orig.get_row(), orig.get_col());
+    Piece* p_dest=get_piece(dest.get_row(), dest.get_col());
+
+    int old_row= orig.get_row();
+    int old_col=orig.get_col();
+
+    p_orig->set_pos(dest);
+    board[dest.get_row()][dest.get_col()]=p_orig;
+    board[orig.get_row()][orig.get_col()]=nullptr;
+
+    cout << "starting the willputincheck "<< endl;
+    bool check=incheck(turn);
+    
+    //undo the move
+    p_orig->set_pos(Spot(old_row,old_col));
+    board[old_row][old_col] = p_orig;
+    board[dest.get_row()][dest.get_col()] = p_dest;
+
+    cout << "nearly finished willputincheck" << endl;
+    return check;
+}
+
+
+//--------------------------------------------------------------
+//--------------------------------------------------------------
+
+bool Board::little_castle(Couleur turn){
+    int i;
+    turn == White ? i = 0 : i = 7;
+    string sk;
+    string sr;
+    turn==White ? sk="\u2654" : sk="\u265A";
+    turn==White ? sr="\u2656" : sr="\u265C";
+
+
+    if( board[i][4]== nullptr || board[i][7]== nullptr || board[i][4]->get_symbole()!=sk || board[i][7]->get_symbole()!=sr || board[i][4]->get_firstmove()==false || board[i][7]->get_firstmove()==false){
+        cout << "impossible little castle" << endl;
+        return false;
+    }
+    if(board[i][5]!=nullptr || board[i][6]!=nullptr ) {
+        cout << "path is not clear for little castle" << endl;
+        return false;
+    }
+    if(incheck(turn)){
+        cout << "little castle in check" << endl;
+        return false;
+    }
+
+    Piece* p_king=board[i][4];
+    Piece* p_right_rook=board[i][7];
+     //Perform the move
+    board[i][6] = board[i][4];
+    board[i][4] = nullptr;
+    board[i][5] = board[i][7];
+    board[i][7] = nullptr;
+ 
+     // Check if the player is in check in that new position
+    if(incheck(turn)){
+        // Player is in check, undo the move
+        board[i][4] = p_king;
+        board[i][7] = p_right_rook;
+        board[i][6] = nullptr;
+        board[i][5] = nullptr;
+        return false;
+    }
+ 
+    cout << " little Castle !" << endl;
+    return true;
+}
+
+
+//--------------------------------------------------------------
+//--------------------------------------------------------------
+
+bool Board::big_castle(Couleur turn){
+    int i;
+    turn == White ? i = 0 : i = 7;
+    string sk;
+    string sr;
+    turn==White ? sk="\u2654" : sk="\u265A";
+    turn==White ? sr="\u2656" : sr="\u265C";
+
+
+    if( board[i][4]== nullptr || board[i][7]== nullptr || board[i][4]->get_symbole()!=sk || board[i][7]->get_symbole()!=sr || board[i][4]->get_firstmove()==false || board[i][7]->get_firstmove()==false){
+        cout << "impossible big castle" << endl;
+        return false;
+    }
+    if(board[i][1]!=nullptr || board[i][2]!=nullptr || board[i][3]!=nullptr ){
+        cout << "path is not clear for big castle" << endl;
+        return false;
+    }
+    if(incheck(turn)){
+        cout << "big castle in check" << endl;
+        return false;
+    }
+
+    Piece* p_king=board[i][4];
+    Piece* p_left_rook=board[i][0];
+    //Perform the move
+    board[i][2] = board[i][4];
+    board[i][4] = nullptr;
+    board[i][3] = board[i][0];
+    board[i][0] = nullptr;
+
+    //Check if the player is in check
+    if(incheck(turn)){
+        //Player is in check, undo the move
+        board[i][4] = p_king;
+        board[i][0] = p_left_rook;
+        board[i][2] = nullptr;
+        board[i][3] = nullptr;
+        return false;
+    }
+
+    cout << "Big Castle !" << endl;
+
+    return true;
+}
 
 
 
@@ -395,246 +626,3 @@ bool Board::deplace(Spot orig, Spot dest,Couleur turn,bool actualmove, bool chec
     return true;
     
 }
-
-
-//--------------------------------------------------------------
-//--------------------------------------------------------------
-
-bool Board::pathisclear(Spot orig, Spot dest){
-    
-    
-    if (board[orig.get_row()][orig.get_col()]->get_symbole() != "\u265E" && board[orig.get_row()][orig.get_col()]->get_symbole() != "\u2658"){
-        int x = orig.get_row();
-        int y = orig.get_col();
-        while (x != dest.get_row() || y != dest.get_col()){
-            if (x < dest.get_row()){
-                x++;
-            }
-            if (x > dest.get_row()){
-                x--;
-            }
-            if (y < dest.get_col()){
-                y++;
-            }
-            if (y > dest.get_col()){
-                y--;
-            }
-            if ((x != dest.get_row() || y != dest.get_col()) && board[x][y] != nullptr){
-                return false;
-            }
-        }
-    }
-    return true;
-
-}
-
-//--------------------------------------------------------------
-//--------------------------------------------------------------
-
-
-
-
-
-
-
-bool Board::incheck(Couleur turn){
-    bool kingsposfound=false;
-    Spot king_pos(0,0);
-    //this iteration finds the position of the king 
-    for(int row=0;row<8;row++){
-        for(int col=0;col<8;col++){
-            if(board[row][col] != nullptr && board[row][col]->get_symbole() == (turn == White ? "\u2654" : "\u265A")){
-                king_pos.set_row(row);
-                king_pos.set_col(col);
-                kingsposfound=true;
-            }    
-        }
-    }
-
-    if (kingsposfound==false){
-        cout << "king not found" << endl;
-        return false;
-    }  
-    //Piece* King_p=board[king_pos.get_row()][king_pos.get_col()];
-    cout << "king position is"<< king_pos.get_row() << king_pos.get_col() << endl;
-    for(int row=0;row<8;row++){
-        for(int col=0;col<8;col++){
-            Piece* orig_p=board[row][col];
-            Spot orig= Spot(row,col);
-            if(orig_p != nullptr && orig_p->get_color()!= turn && orig_p->possible_move(orig,king_pos) && pathisclear(orig,king_pos)) {
-                cout << turn << "king in check by " << orig.get_row() << orig.get_col() << endl;
-                return true;
-            }
-        
-        }
-    }
-    cout << "not in check" << endl;
-    return false;
-}
-
-
-//--------------------------------------------------------------
-//--------------------------------------------------------------
-
-bool Board::willputincheck(Spot orig, Spot dest,Couleur turn){
-    Piece* p_orig= get_piece(orig.get_row(), orig.get_col());
-    Piece* p_dest=get_piece(dest.get_row(), dest.get_col());
-
-    int old_row= orig.get_row();
-    int old_col=orig.get_col();
-
-    p_orig->set_pos(dest);
-    board[dest.get_row()][dest.get_col()]=p_orig;
-    board[orig.get_row()][orig.get_col()]=nullptr;
-
-    cout << "starting the willputincheck "<< endl;
-    bool check=incheck(turn);
-    
-    //undo the move
-    p_orig->set_pos(Spot(old_row,old_col));
-    board[old_row][old_col] = p_orig;
-    board[dest.get_row()][dest.get_col()] = p_dest;
-
-    cout << "nearly finished willputincheck" << endl;
-    return check;
-}
-
-
-//--------------------------------------------------------------
-//--------------------------------------------------------------
-
-void Board::canonicallyprintboard(string score){
-    string boardstring = "";
-    // Canonical names for the pieces
-    string canonicalnameswhites[6] = {"wR", "wN", "wB", "wQ", "wK", "wP"};
-    string canonicalnamesblacks[6] = {"bR", "bN", "bB", "bQ", "bK", "bP"};
-    // Unicode names for the pieces
-    string whitenames[6] = {"\u2656", "\u2658", "\u2657", "\u2655", "\u2654", "\u2659"};
-    string blacknames[6] = {"\u265C", "\u265E", "\u265D", "\u265B", "\u265A", "\u265F"};
-    // Iterate over the board and add the pieces to the string
-    for (int i = 0; i < 8; i++){
-        for (int j = 0; j < 8; j++){
-            if (board[i][j] == nullptr){
-                boardstring += ",";
-            }
-            else{
-                for (int k = 0; k < 6; k++){
-                    if (board[i][j]->get_symbole() == whitenames[k]){
-                        boardstring += canonicalnameswhites[k];
-                    }
-                    if (board[i][j]->get_symbole() == blacknames[k]){
-                        boardstring += canonicalnamesblacks[k];
-                    }
-                }
-                boardstring += ",";
-            }
-        }
-    }
-    boardstring += " ";
-    // Add the score to the string
-    boardstring += score;
-    cout << boardstring << endl;
-
-}
-
-
-
-//--------------------------------------------------------------
-//--------------------------------------------------------------
-
-bool Board::little_castle(Couleur turn){
-    int i;
-    turn == White ? i = 0 : i = 7;
-    string sk;
-    string sr;
-    turn==White ? sk="\u2654" : sk="\u265A";
-    turn==White ? sr="\u2656" : sr="\u265C";
-
-
-    if( board[i][4]== nullptr || board[i][7]== nullptr || board[i][4]->get_symbole()!=sk || board[i][7]->get_symbole()!=sr || board[i][4]->get_firstmove()==false || board[i][7]->get_firstmove()==false){
-        cout << "impossible little castle" << endl;
-        return false;
-    }
-    if(board[i][5]!=nullptr || board[i][6]!=nullptr ) {
-        cout << "path is not clear for little castle" << endl;
-        return false;
-    }
-    if(incheck(turn)){
-        cout << "little castle in check" << endl;
-        return false;
-    }
-
-    Piece* p_king=board[i][4];
-    Piece* p_right_rook=board[i][7];
-     //Perform the move
-    board[i][6] = board[i][4];
-    board[i][4] = nullptr;
-    board[i][5] = board[i][7];
-    board[i][7] = nullptr;
- 
-     // Check if the player is in check in that new position
-    if(incheck(turn)){
-        // Player is in check, undo the move
-        board[i][4] = p_king;
-        board[i][7] = p_right_rook;
-        board[i][6] = nullptr;
-        board[i][5] = nullptr;
-        return false;
-    }
- 
-    cout << " little Castle !" << endl;
-    return true;
-}
-
-
-//--------------------------------------------------------------
-//--------------------------------------------------------------
-
-bool Board::big_castle(Couleur turn){
-    int i;
-    turn == White ? i = 0 : i = 7;
-    string sk;
-    string sr;
-    turn==White ? sk="\u2654" : sk="\u265A";
-    turn==White ? sr="\u2656" : sr="\u265C";
-
-
-    if( board[i][4]== nullptr || board[i][7]== nullptr || board[i][4]->get_symbole()!=sk || board[i][7]->get_symbole()!=sr || board[i][4]->get_firstmove()==false || board[i][7]->get_firstmove()==false){
-        cout << "impossible big castle" << endl;
-        return false;
-    }
-    if(board[i][1]!=nullptr || board[i][2]!=nullptr || board[i][3]!=nullptr ){
-        cout << "path is not clear for big castle" << endl;
-        return false;
-    }
-    if(incheck(turn)){
-        cout << "big castle in check" << endl;
-        return false;
-    }
-
-    Piece* p_king=board[i][4];
-    Piece* p_left_rook=board[i][0];
-    //Perform the move
-    board[i][2] = board[i][4];
-    board[i][4] = nullptr;
-    board[i][3] = board[i][0];
-    board[i][0] = nullptr;
-
-    //Check if the player is in check
-    if(incheck(turn)){
-        //Player is in check, undo the move
-        board[i][4] = p_king;
-        board[i][0] = p_left_rook;
-        board[i][2] = nullptr;
-        board[i][3] = nullptr;
-        return false;
-    }
-
-    cout << "Big Castle !" << endl;
-
-    return true;
-}
-
-//--------------------------------------------------------------
-//--------------------------------------------------------------
-
