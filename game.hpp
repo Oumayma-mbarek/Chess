@@ -21,8 +21,8 @@ class Game{
     private: 
 
         Board board;/**<the chess board for the game*/
-        Player player1;/**<the first player */
-        Player player2;/**<the second player */
+        Player player1 = Player("white Player",White);/**<the first player */
+        Player player2 = Player("black Player",Black);/**<the second player */
 
     public:
         /**

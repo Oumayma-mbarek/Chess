@@ -11,7 +11,7 @@
 
 using namespace std;
 
-Game::Game() : board(Board()), player1(Player("white Player",White)), player2(Player("black Player",Black)){}
+Game::Game() {}
 
 //--------------------------------------------------------------
 //--------------------------------------------------------------

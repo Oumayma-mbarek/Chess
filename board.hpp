@@ -24,13 +24,13 @@ private:
     vector<Piece*> pieces[2]; /**< two vectors to store black and white pieces, 0=white 1=Black */
     int enpassantw[8]; /**< Array to track en passant moves for white pieces. */
     int enpassantb[8]; /**< Array to track en passant moves for black pieces. */
-    int nocapture; /**< Number of moves since the last capture. */
+    int nocapture=0; /**< Number of moves since the last capture. */
 
 public:
      /**
      * @brief Constructs a Board.
      */
-    Board(); 
+    Board();
 
     /**
      * @brief destructor of a Board
